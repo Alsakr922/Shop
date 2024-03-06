@@ -3,7 +3,7 @@ const Hero = () => {
   return (
     <div className='lg:p-[200px] p-[50px] h-[100vh]'>
         <div className='home h-[80vh] sm:flexCenter flexStart container m-auto'>
-        <div className='space-y-10  text-center text-white lg:text-black'>
+        <div className='space-y-10  text-center sm:text-white text-black'>
           <h1 className='lg:regular-64 regular-40'>70% Ramadan Sale</h1>
           <p className='lg:regular-64 regular-40'>All Products</p>
           <Button

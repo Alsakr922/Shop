@@ -16,7 +16,7 @@ const FilteredProducts = () => {
           {products.filter(
             (product) => product.type === type).map((product, index) => {
               return (
-                <ProductCard grid={""} type={product.type} key={index} id={index} title={product.title} img={product.img} oldPrice={product.oldPrice} newPrice={product.newPrice}  />
+                <ProductCard type={product.type} key={index} id={product.id} title={product.title} img={product.img} oldPrice={product.oldPrice} newPrice={product.newPrice}  />
             )
             })}
         </div>
