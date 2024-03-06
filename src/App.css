@@ -58,11 +58,11 @@ html{
   }
 
   .flexStart {
-    @apply flex items-center justify-start;
+    @apply flex items-start justify-start;
   }
 
   .flexEnd {
-    @apply flex items-center justify-end;
+    @apply flex items-end justify-end;
   }
 
   /* FONTS */

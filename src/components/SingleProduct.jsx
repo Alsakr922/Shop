@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom"
 import { addToCart } from "../Redux/Slices/CartSlice"
 import { useState } from "react"
 import { addToWish } from "../Redux/Slices/WishSlice"
+import Swal from "sweetalert2"
 
 const SingleProduct = () => {
 
@@ -24,7 +25,10 @@ const SingleProduct = () => {
     const products = useSelector((state) => state.Products.singleProduct)
     console.log("Single Products", products)
     const { id } = useParams()
-    console.log("id", id)
+  console.log("id", id)
+      const user = useSelector((state) => state.user.user)
+  // console.log("user", user);
+  const { authUser } = user;
   return (
     <div className="py-[200px]">
       <div className="container m-auto bg-slate-100">
@@ -55,24 +59,40 @@ const SingleProduct = () => {
                         </select>
                   <p className="regular-24 border-y border-solid border-gray-30 py-5 my-5 px-5"><span className='text-red-600 text-[16px] pr-3 line-through'>  {product.oldPrice} $ </span>   {product.newPrice}$</p>
                   <div className="flexBetween px-5">
-                  <Button className="flex space-x-3 btnOutline text-[30px] hover:text-green-50 rounded-none " onClick={() => dispatch(addToCart({
+                  <Button className="flex space-x-3 btnOutline text-[30px] hover:text-green-50 rounded-none " onClick={authUser ? () => dispatch(addToCart({
                     id:  product.id ,
                     name: product.title,
                     img:product.img,
                     newPrice: product.newPrice ,
                     color: color,
                     amount: 1,
-                  }))}>
+                  })) : 
+          () => {
+            Swal.fire({
+              icon: "error",
+              title: "You Cant Add Before You Sign In!...",
+              html: `<a class=" text-primary-500 font-semibold text-[24px] capitalize tracking-[8px]" href="/login">login</a>`,
+            })
+          }
+                  }>
                     <FaCartPlus />
                       <span className="regular-20">Buy Now!</span>
                   </Button>
-                    <Button className="flex space-x-3 btnOutline  text-[30px] hover:text-red-500 rounded-none "  onClick={() => dispatch(addToWish({
+                    <Button className="flex space-x-3 btnOutline  text-[30px] hover:text-red-500 rounded-none "  onClick={authUser ? () => dispatch(addToWish({
                     id:  product.id ,
                     name: product.title,
                     img:product.img,
                     color: color,
                     amount: 1,
-                  }))}>
+                    }))
+                      :
+          () => {
+            Swal.fire({
+              icon: "error",
+              title: "You Cant Add Before You Sign In!...",
+              html: `<a class=" text-primary-500 font-semibold text-[24px] capitalize tracking-[8px]" href="/login">login</a>`,
+            })
+          }}>
                     <FaHeart  />
                       <span className="regular-20">Add To Favorites</span>
                   </Button>

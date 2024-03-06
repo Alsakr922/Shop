@@ -65,10 +65,11 @@ export const WishSlice = createSlice({
       } catch (err) {
         return err;
       }
-    }
+    },
+
   }
 })
 
 // eslint-disable-next-line react-refresh/only-export-components
-export const { addToWish , removeFromWish  } = WishSlice.actions;
+export const { addToWish , removeFromWish   } = WishSlice.actions;
 export default WishSlice.reducer;

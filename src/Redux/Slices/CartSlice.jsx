@@ -79,10 +79,11 @@ export const CartSlice = createSlice({
       } catch (err) {
         return err;
       }
-    }
+    },
+
   }
 })
 
 // eslint-disable-next-line react-refresh/only-export-components
-export const { addToCart , removeFromCart  } = CartSlice.actions;
+export const { addToCart , removeFromCart , deleteAllItems  } = CartSlice.actions;
 export default CartSlice.reducer;

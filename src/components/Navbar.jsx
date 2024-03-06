@@ -75,7 +75,7 @@ function Navbar() {
       </li>
           : <div className="flexCenter">
               <Link to={"/login"}>
-              <Button className="btnOutline lg:text-[24px] ">
+              <Button className="btnOutline lg:px-5 lg:text-[20px] ">
                 Log In
               </Button>
               </Link>
