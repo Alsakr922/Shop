@@ -36,7 +36,7 @@ const SingleProduct = () => {
             return (
         // eslint-disable-next-line react/jsx-key
         <div className="">
-        <div className="grid grid-cols-2 " key={index}>
+        <div className="grid lg:grid-cols-2 grid-cols-1" key={index}>
           <div className="p-3  mx-5">
             <img className="cursor-pointer" src={product.img} alt="" />
             <img className="w-[20%] cursor-pointer inline py-5 px-2 mr-5 " src={product.img} alt="" />
@@ -71,7 +71,6 @@ const SingleProduct = () => {
             Swal.fire({
               icon: "error",
               title: "You Cant Add Before You Sign In!...",
-              html: `<a class=" text-primary-500 font-semibold text-[24px] capitalize tracking-[8px]" href="/login">login</a>`,
             })
           }
                   }>
@@ -90,7 +89,6 @@ const SingleProduct = () => {
             Swal.fire({
               icon: "error",
               title: "You Cant Add Before You Sign In!...",
-              html: `<a class=" text-primary-500 font-semibold text-[24px] capitalize tracking-[8px]" href="/login">login</a>`,
             })
           }}>
                     <FaHeart  />

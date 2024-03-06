@@ -40,8 +40,7 @@ const ProductCard = ({ img, id, title, newPrice, oldPrice, type, colors }) => {
             Swal.fire({
               icon: "error",
               title: "You Cant Add Before You Sign In!...",
-              html: `<a class=" text-primary-500 font-semibold text-[24px] capitalize tracking-[8px]" href="/login">login</a>`,
-            })
+             })
           } } >
             Add To Cart
           </Button>
