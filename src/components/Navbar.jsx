@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom"
 import { NAV_LINKS } from "../constans/index"
 import Logo from '../logo.png'
+import person from '../assets/people/2.png'
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../Redux/Slices/AuthSlice";
 import { Button } from "@material-tailwind/react";
-import { FaHeart, FaShoppingBag, FaUserCircle } from "react-icons/fa";
+import { FaHeart, FaShoppingBag } from "react-icons/fa";
 import { useState } from "react";
 function Navbar() {
   const dispatch = useDispatch()
@@ -64,7 +65,7 @@ function Navbar() {
               ))}
           {authUser ? 
             <li className="px-5 relative cursor-pointer">
-              <FaUserCircle width={50} onClick={handlerUser} />
+              <img src={person} width={50} onClick={handlerUser} alt="" />
         {OpenUser && 
         <ul id="userSign" className="absolute z-50 bg-second-100 top-[62px] right-[-35px] pt-5 px-5 text-black text-[18px] rounded bg-back">
           <li className="py-2 flexCenter gap-x-5 text-gray-500" >Hello:<span className="text-primary-400">{user.name}</span></li>
