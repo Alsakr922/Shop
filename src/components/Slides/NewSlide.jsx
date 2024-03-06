@@ -43,7 +43,7 @@ const NewSLide = () => {const items =[ {
   return (
   <div className='pb-[100px] bg-gray-100' id='products'>
     <div className='New container m-auto'>
-        <p className='regular-64 sm:regual-32 text-center border-b-2 border-b-second-900 py-10 pb-5 mb-10 mx-[500px]'>News Products</p>
+        <p className='lg:regular-64 md:regular-40 sm:regual-32 text-center border-b-2 border-b-second-900 py-10 pb-5 mb-10 '>News Products</p>
     <Slider {...settings}>
             {items.map((item) => {
         return (
