@@ -56,9 +56,9 @@ function Navbar() {
               </Link>
             </div>}
         </ul>} */}
-        <ul className="flexBetween mx-auto text-center me-10">
+        <ul className="flexBetween mx-auto text-center">
           {NAV_LINKS.map((link) => (
-                <Link to={link.href} key={link.title} className="regular-24 py-2 px-5 text-primary-600 flexCenter cursor-pointer transition-all hover:text-second-900">
+                <Link to={link.href} key={link.title} className="lg:regular-24 regular-16 py-2 lg:px-5 px-2 text-primary-600 flexCenter cursor-pointer transition-all hover:text-second-900">
                   {link.label}
               </Link>
               ))}
@@ -75,7 +75,7 @@ function Navbar() {
       </li>
           : <div className="flexCenter">
               <Link to={"/login"}>
-              <Button className="btn text-[24px] ">
+              <Button className="btnOutline lg:text-[24px] ">
                 Log In
               </Button>
               </Link>

@@ -8,8 +8,8 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-<footer className=" px-20 py-20">
-  <div className="grid lg:grid-cols-3 md:grid-cols-1 text-gray-700">
+<footer className="py-20">
+  <div className="grid lg:grid-cols-3 md:grid-cols-1 container m-auto text-gray-700">
     <ul className="contact ">
       <img src={Logo} className="logo" width={80} alt="" />
       <p className="my-5 font-semibold text-lg">Contact</p>

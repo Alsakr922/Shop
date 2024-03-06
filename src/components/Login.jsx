@@ -27,7 +27,7 @@ const Login = () => {
     setValues({ ...Values, [name]: value });
   }
   return (
-    <div>
+    <div className='container m-auto'>
       <Card className='w-96 m-auto mt-10'>
         <CardHeader
           variant='gradient'
