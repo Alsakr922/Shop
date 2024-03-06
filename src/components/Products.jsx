@@ -1,7 +1,6 @@
 /* eslint-disable react/jsx-key */
 import { PRODUCTS_CARD } from '../constans/index'
 import ProductCard from './ProductCard.jsx';
-
 const Products = () => {
 
   return (

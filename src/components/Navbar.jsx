@@ -4,7 +4,7 @@ import Logo from '../logo.png'
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../Redux/Slices/AuthSlice";
 import { Button } from "@material-tailwind/react";
-import { FaBars, FaHeart, FaShoppingBag } from "react-icons/fa";
+import { FaHeart, FaShoppingBag } from "react-icons/fa";
 import { useState } from "react";
 function Navbar() {
   const dispatch = useDispatch()
