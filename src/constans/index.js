@@ -34,7 +34,7 @@ export const PRODUCTS_CARD = [
     title: 'I Pad Pro 11 Inch',
     type: "Laptops",
     id: "1",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/lab (1).png",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/lab (1).png",
     oldPrice: 22000,
     newPrice: 17000,
     colors:['gray','blue','black']
@@ -43,7 +43,7 @@ export const PRODUCTS_CARD = [
     title: 'I Pad Pro 14 Inch',
     type: "Laptops",
     id: "2",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/lab (2).png",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/lab (2).png",
     oldPrice: 26000,
     newPrice: 18000,
     colors:['gray','blue','black']
@@ -52,7 +52,7 @@ export const PRODUCTS_CARD = [
     title: 'I Pad Pro 16 Inch',
     type: "Laptops",
     id: "3",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/lab (3).png",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/lab (3).png",
     oldPrice: 39000,
     newPrice: 30000,
     colors:['gray','blue','black']
@@ -61,7 +61,7 @@ export const PRODUCTS_CARD = [
     title: 'Apple Watch 9',
     type: "Watches",
     id: "4",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/w (3).png",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/w (3).png",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['gray','red','black']
@@ -70,7 +70,7 @@ export const PRODUCTS_CARD = [
     title: 'Apple Watch Ultra 2',
     type: "Watches",
     id: "5",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/w (1).png",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/w (1).png",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['gray','blue','white','green',]
@@ -79,7 +79,7 @@ export const PRODUCTS_CARD = [
     title: 'Apple Watch Ultra 2',
     type: "Watches",
     id: "6",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/w (1).webp",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/w (1).webp",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['gray','blue','white','green',]
@@ -88,7 +88,7 @@ export const PRODUCTS_CARD = [
     title: 'Apple Watch Ultra 2',
     type: "Watches",
     id: "7",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/w (2).webp",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/w (2).webp",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['gray','blue','white','green',]
@@ -97,7 +97,7 @@ export const PRODUCTS_CARD = [
     title: 'Apple Watch Ultra 2',
     type: "Watches",
     id: "8",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/w (3).webp",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/w (3).webp",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['gray','blue','white','green',]
@@ -106,7 +106,7 @@ export const PRODUCTS_CARD = [
     title: 'Apple Watch Ultra 2',
     type: "Watches",
     id: "9",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/w (4).webp",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/w (4).webp",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['gray','blue','white','green',]
@@ -115,7 +115,7 @@ export const PRODUCTS_CARD = [
     title: 'Air Pods Customization Colors',
     type: "Accessories",
     id: "10",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/wh (1).png",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/wh (1).png",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','purple',]
@@ -124,7 +124,7 @@ export const PRODUCTS_CARD = [
     title: 'Air Pods Customization Colors',
     type: "Accessories",
     id: "11",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/wh (2).webp",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/wh (2).webp",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','purple',]
@@ -133,7 +133,7 @@ export const PRODUCTS_CARD = [
     title: 'Air Pods Customization Colors',
     type: "Accessories",
     id: "12",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/wh (3).webp",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/wh (3).webp",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','purple',]
@@ -142,7 +142,7 @@ export const PRODUCTS_CARD = [
     title: 'Air Pods Customization Colors',
     type: "Accessories",
     id: "13",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/wh (4).webp",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/wh (4).webp",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','purple',]
@@ -151,7 +151,7 @@ export const PRODUCTS_CARD = [
     title: 'Gaming HeadPhones',
     type: "Accessories",
     id: "14",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/h (1).webp",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/h (1).webp",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','purple',]
@@ -160,7 +160,7 @@ export const PRODUCTS_CARD = [
     title: 'Gaming HeadPhones',
     type: "Accessories",
     id: "15",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/h (2).webp",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/h (2).webp",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','purple',]
@@ -169,7 +169,7 @@ export const PRODUCTS_CARD = [
     title: 'Gaming HeadPhones',
     type: "Accessories",
     id: "16",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/h (3).webp",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/h (3).webp",
     oldPrice: 3200,
     newPrice: 2805,
     colors:['yellow','black','purple',]
@@ -178,7 +178,7 @@ export const PRODUCTS_CARD = [
     title: 'Apple Penscil',
     type: "Accessories",
     id: "17",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/a (1).webp",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/a (1).webp",
     oldPrice: 3200,
     newPrice: 2800,
     colors:['yellow','black','purple',]
@@ -187,7 +187,7 @@ export const PRODUCTS_CARD = [
     title: 'HeadPhones',
     type: "Accessories",
     id: "18",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/a (2).webp",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/a (2).webp",
     oldPrice: 3200,
     newPrice: 2834,
     colors:['yellow','black','purple',]
@@ -196,7 +196,7 @@ export const PRODUCTS_CARD = [
     title: 'HeadPhones',
     type: "Accessories",
     id: "19",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/a (3).webp",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/a (3).webp",
     oldPrice: 3200,
     newPrice: 2500,
     colors:['yellow','black','purple',]
@@ -205,7 +205,7 @@ export const PRODUCTS_CARD = [
     title: 'HeadPhones',
     type: "Accessories",
     id: "20",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/a (4).webp",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/a (4).webp",
     oldPrice: 3200,
     newPrice: 2222,
     colors:['yellow','black','purple',]
@@ -214,7 +214,7 @@ export const PRODUCTS_CARD = [
     title: 'HeadPhones',
     type: "Accessories",
     id: "21",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/a (5).webp",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/a (5).webp",
     oldPrice: 3200,
     newPrice: 440,
     colors:['yellow','black','purple',]
@@ -223,7 +223,7 @@ export const PRODUCTS_CARD = [
     title: 'HeadPhones',
     type: "Accessories",
     id: "22",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/a (6).webp",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/a (6).webp",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','purple',]
@@ -232,7 +232,7 @@ export const PRODUCTS_CARD = [
     title: 'HeadPhones',
     type: "Accessories",
     id: "23",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/a (7).webp",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/a (7).webp",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','purple',]
@@ -241,7 +241,7 @@ export const PRODUCTS_CARD = [
     title: 'HeadPhones',
     type: "Accessories",
     id: "24",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/a (8).webp",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/a (8).webp",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','purple',]
@@ -250,7 +250,7 @@ export const PRODUCTS_CARD = [
     title: 'HeadPhones',
     type: "Accessories",
     id: "25",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/a (9).webp",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/a (9).webp",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','purple',]
@@ -259,7 +259,7 @@ export const PRODUCTS_CARD = [
     title: 'HeadPhones',
     type: "Accessories",
     id: "26",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/a (10).webp",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/a (10).webp",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','purple',]
@@ -268,7 +268,7 @@ export const PRODUCTS_CARD = [
     title: 'HeadPhones',
     type: "Accessories",
     id: "27",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/a (11).webp",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/a (11).webp",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','purple',]
@@ -277,7 +277,7 @@ export const PRODUCTS_CARD = [
     title: 'HeadPhones',
     type: "Accessories",
     id: "28",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/a (12).webp",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/a (12).webp",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','purple',]
@@ -286,7 +286,7 @@ export const PRODUCTS_CARD = [
     title: 'Gaming HeadPhones',
     type: "Accessories",
     id: "29",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/h (4).webp",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/h (4).webp",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','purple',]
@@ -295,7 +295,7 @@ export const PRODUCTS_CARD = [
     title: 'Gaming HeadPhones',
     type: "Accessories",
     id: "30",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/h (5).webp",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/h (5).webp",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','purple',]
@@ -304,7 +304,7 @@ export const PRODUCTS_CARD = [
     title: 'Gaming HeadPhones',
     type: "Accessories",
     id: "31",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/h (6).webp",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/h (6).webp",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','purple',]
@@ -313,7 +313,7 @@ export const PRODUCTS_CARD = [
     title: 'Gaming HeadPhones',
     type: "Accessories",
     id: "32",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/h (7).webp",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/h (7).webp",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','purple',]
@@ -322,7 +322,7 @@ export const PRODUCTS_CARD = [
     title: 'Gaming HeadPhones',
     type: "Accessories",
     id: "33",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/h (8).webp",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/h (8).webp",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','purple',]
@@ -331,7 +331,7 @@ export const PRODUCTS_CARD = [
     title: 'Gaming HeadPhones',
     type: "Accessories",
     id: "34",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/h (9).webp",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/h (9).webp",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','purple',]
@@ -340,7 +340,7 @@ export const PRODUCTS_CARD = [
     title: 'Gaming HeadPhones',
     type: "Accessories",
     id: "35",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/h (10).webp",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/h (10).webp",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','white','purple',]
@@ -349,7 +349,7 @@ export const PRODUCTS_CARD = [
     title: 'Gaming HeadPhones',
     type: "Accessories",
     id: "36",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/h (11).webp",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/h (11).webp",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['cyan','gray','purple',]
@@ -358,7 +358,7 @@ export const PRODUCTS_CARD = [
     title: 'Gaming HeadPhones',
     type: "Accessories",
     id: "37",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/h (12).webp",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/h (12).webp",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','violet',]
@@ -367,7 +367,7 @@ export const PRODUCTS_CARD = [
     title: 'Gaming HeadPhones',
     type: "Accessories",
     id: "38",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/h (13).webp",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/h (13).webp",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','white','purple',]
@@ -376,7 +376,7 @@ export const PRODUCTS_CARD = [
     title: 'phone ',
     type: "Phones",
     id: "39",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/phone (2).png",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/phone (2).png",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['gray']
@@ -384,7 +384,7 @@ export const PRODUCTS_CARD = [
     title: 'phone ',
     type: "Phones",
     id: "40",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/phone (3).png",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/phone (3).png",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['black']
@@ -393,7 +393,7 @@ export const PRODUCTS_CARD = [
     title: 'phone ',
     type: "Phones",
     id: "41",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/phone (1).png",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/phone (1).png",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['slate','blue','white','green',]
@@ -402,7 +402,7 @@ export const PRODUCTS_CARD = [
     title: 'Apple TV',
     type: "Tv",
     id: "42",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/tv.png",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/tv.png",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['gray','white','black']
@@ -411,7 +411,7 @@ export const PRODUCTS_CARD = [
     title: 'I Pad',
     type: "IPad",
     id: "43",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/pad (1).png",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/pad (1).png",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['gray','purple','cyan']
@@ -420,7 +420,7 @@ export const PRODUCTS_CARD = [
     title: 'I Pad',
     type: "IPad",
     id: "44",
-    img: "https://github.com/Alsakr922/Shop/blob/main/src/assetsproducts/pad (2).png",
+    img: "https://github.com/Alsakr922/Shop/blob/main/src/assets/products/pad (2).png",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['gray','black']
