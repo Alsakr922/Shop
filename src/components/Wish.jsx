@@ -40,7 +40,7 @@ const Wish = () => {
       console.log("wishesTotalAmount", wishesTotalAmount)
   return (
     <div className='py-[200px]'>
-      <div className='container m-auto grid grid-cols-3 gap-5'>
+      <div className='container m-auto grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5'>
         {wish.map((product , index) => {
           return (
             <Card id={product.id} key={index} className={`bg-[#FAFAFA] hover:scale-[1.02] cursor-pointer transition-all`}>
