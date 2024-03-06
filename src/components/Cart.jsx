@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-key */
 
 import { useDispatch, useSelector } from 'react-redux';
-import { FaXingSquare } from 'react-icons/fa';
+import { FaEraser } from 'react-icons/fa';
 import { removeFromCart } from '../Redux/Slices/CartSlice';
 const Cart = () => {
     const dispatch = useDispatch()
@@ -18,8 +18,8 @@ const Cart = () => {
     <div>
       <div>
           <section className="my-10 cart-section">
-    <table className="w-4/5 m-auto text-center">
-      <thead className="tablehead p-10 text-main uppercase text-2xl mb-5 "> 
+    <table className="w-4/5 m-auto">
+      <thead className="tablehead p-10 text-primary-500 uppercase text-2xl mb-5 "> 
         <td className="py-5 font-semibold">Remove</td>
         <td className="py-5 font-semibold">Image</td>
         <td className="py-5 font-semibold">Product</td>
@@ -28,11 +28,11 @@ const Cart = () => {
         <td className="py-5 font-semibold">َQuantity</td> 
         <td className="py-5 font-semibold">َTotal</td> 
       </thead>
-      <tbody className="mt-5 text-lg">
+      <tbody className="mt-5  text-lg">
         {cart.map((product ) => {
-          return (<tr>
-        <td className="py-5 font-semibold cursor-pointer"><FaXingSquare onClick={() => dispatch(removeFromCart(product))} /></td>
-        <td className="py-5 font-semibold"><img src={product.img} width={50} alt="" /></td>
+          return (<tr className='m-auto container'>
+        <td className="py-5 font-semibold cursor-pointer"><FaEraser onClick={() => dispatch(removeFromCart(product))} /></td>
+        <td className="py-5 font-semibold"><img src={product.img} width={70} alt="" /></td>
             <td className="py-5 font-semibold">{product.name}</td>
             <td className="py-5 font-semibold">{product.newPrice}</td>
             <td className="py-5 font-semibold">{product.color}</td>

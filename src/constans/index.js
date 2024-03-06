@@ -24,11 +24,8 @@ export const NAV_LINKS_User = [
 ]
 // NAVIGATION
 export const NAV_LINKS = [
-  { href: '#category', key: 'category', label: 'Categories' },
+  { href: '/#category', key: 'category', label: 'Categories' },
   { href: '/products', key: 'products', label: 'Products' },
-  { href: '/products', key: 'products', label: 'News' },
-  { href: '/products', key: 'products', label: 'Best Seller' },
-  { href: '/products', key: 'products', label: 'Populer' },
 ];
 
 //Products

@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import Swal from "sweetalert2";
 
 export const CartSlice = createSlice({
   name: "cart",
@@ -17,9 +18,9 @@ export const CartSlice = createSlice({
             product.id === productId.id
         )
         if (exist) {
-          exist.amount++;
+          exist.amount ++;
           exist.totalPrice += productId.newPrice;
-          state.totalAmount++;
+          state.totalAmount ++;
           state.totalPrice += productId.newPrice;
         } else {
           state.cart.push({
@@ -31,8 +32,13 @@ export const CartSlice = createSlice({
             amount: 1,
             totalPrice: +productId.newPrice
           })
+          state.totalAmount++;
         }
-        state.totalAmount++;
+            Swal.fire({
+      title: "Added!",
+      text: "Your Product has been Added.",
+      icon: "success"
+    });
         state.totalPrice += productId.newPrice
         const cartJson = JSON.stringify(state.cart)
         sessionStorage.setItem('cart', cartJson)
@@ -52,7 +58,12 @@ export const CartSlice = createSlice({
               product.id !== productId.id
           );
         state.totalAmount--;
-        state.totalPrice -= productId.newPrice
+          state.totalPrice -= productId.newPrice
+      Swal.fire({
+      title: "Deleted!",
+      text: "Your Product has been Deleted.",
+      icon: "error"
+    });
       const cartJson = JSON.stringify(state.cart)
       sessionStorage.setItem('cart', cartJson)
       }

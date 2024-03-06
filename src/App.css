@@ -148,10 +148,17 @@ html{
   /* Firefox */
 }
 
-.home {
-  background-image: url("/src/assets/hero/hero-2.png");
+.home1,
+.home2 {
   background-position: center;
   background-size: cover !important;
+}
+.home1 {
+  background-image: url("/src/assets/hero/hero-1.png");
+}
+
+.home2 {
+  background-image: url("/src/assets/hero/hero-2.png");
 }
 
 .home .btn {

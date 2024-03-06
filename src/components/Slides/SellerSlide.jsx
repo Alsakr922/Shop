@@ -6,47 +6,72 @@ import ProductCard from "../ProductCard";
 const SellerSlide = () => {
   
   const items = [{
-    title: 'I Pad Pro 11 Inch',
-    type: "Laptops",
-    id: "1",
-    img: "/src/assets/products/lab (1).png",
-    oldPrice: 22000,
-    newPrice: 17000,
-    colors:['gray','blue','black']
+    title: 'Gaming HeadPhones',
+    type: "Accessories",
+    id: "15",
+    img: "/src/assets/products/h (2).webp",
+    oldPrice: 3200,
+    newPrice: 2000,
+    colors:['yellow','black','purple',]
   },
   {
-    title: 'I Pad Pro 14 Inch',
-    type: "Laptops",
-    id: "2",
-    img: "/src/assets/products/lab (2).png",
-    oldPrice: 26000,
-    newPrice: 18000,
-    colors:['gray','blue','black']
+    title: 'Gaming HeadPhones',
+    type: "Accessories",
+    id: "16",
+    img: "/src/assets/products/h (3).webp",
+    oldPrice: 3200,
+    newPrice: 2805,
+    colors:['yellow','black','purple',]
   },
   {
-    title: 'I Pad Pro 16 Inch',
-    type: "Laptops",
-    id: "3",
-    img: "/src/assets/products/lab (3).png",
-    oldPrice: 39000,
-    newPrice: 30000,
-    colors:['gray','blue','black']
-    }]
+    title: 'Apple Penscil',
+    type: "Accessories",
+    id: "17",
+    img: "/src/assets/products/a (1).webp",
+    oldPrice: 3200,
+    newPrice: 2800,
+    colors:['yellow','black','purple',]
+  },
+  {
+    title: 'HeadPhones',
+    type: "Accessories",
+    id: "18",
+    img: "/src/assets/products/a (2).webp",
+    oldPrice: 3200,
+    newPrice: 2834,
+    colors:['yellow','black','purple',]
+  },
+  {
+    title: 'HeadPhones',
+    type: "Accessories",
+    id: "19",
+    img: "/src/assets/products/a (3).webp",
+    oldPrice: 3200,
+    newPrice: 2500,
+    colors:['yellow','black','purple',]
+  },
+  {
+    title: 'HeadPhones',
+    type: "Accessories",
+    id: "20",
+    img: "/src/assets/products/a (4).webp",
+    oldPrice: 3200,
+    newPrice: 2222,
+    colors:['yellow','black','purple',]
+  },]
   var settings = {
     dots: true,
     infinite: true,
-    responsive: true,
     autoplay: true,
     arrows: true,
     speed: 300,
     slidesToShow: 3,
-    slidesToScroll: 1,
-    
+    slidesToScroll: 1
   };
   return (
   <div className='pb-[100px] bg-gray-100' id='products'>
     <div className='New container m-auto'>
-        <p className='regular-64 text-center border-b-2 border-b-second-900 py-10 pb-5 mb-10 mx-[500px] '>Best Seller</p>
+        <p className='regular-64 sm:regual-32 text-center border-b-2 border-b-second-900 py-10 pb-5 mb-10 mx-[500px] '>Best Seller</p>
     <Slider {...settings}>
             {items.map((item) => {
         return (

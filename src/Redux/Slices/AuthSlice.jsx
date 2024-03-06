@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { createSlice } from "@reduxjs/toolkit";
+import Swal from "sweetalert2";
 
 export const AuthSlice = createSlice({
   name: "auth",
@@ -22,6 +23,11 @@ export const AuthSlice = createSlice({
       } else {
         state.user.authUser = true;
         const SaveState = JSON.stringify(userId);
+        Swal.fire({
+      title: "Welcome!",
+      text: "Your One Of Us Now.",
+      icon: "success"
+    });
         localStorage.setItem('user', SaveState)
       }
     },
@@ -32,6 +38,11 @@ export const AuthSlice = createSlice({
         email: '',
         authUser: false
       };
+              Swal.fire({
+      title: "Good Bye",
+      text: "Your Leave Us Now But We Have To See You Soon.",
+      icon: "error"
+    });
       localStorage.clear()
     }
   }

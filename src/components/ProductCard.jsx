@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import { addToCart } from '../Redux/Slices/CartSlice';
 import {  useDispatch, useSelector } from 'react-redux';
 import { addToWish } from '../Redux/Slices/WishSlice';
+import Swal from 'sweetalert2';
 const ProductCard = ({ img, id, title, newPrice, oldPrice, type, colors }) => {
   const dispatch = useDispatch()
     const user = useSelector((state) => state.user.user)
@@ -34,7 +35,14 @@ const ProductCard = ({ img, id, title, newPrice, oldPrice, type, colors }) => {
             newPrice: +newPrice ,
             colors: colors,
             amount: 1,
-          })) : '' }>
+          })) :
+          () => {
+            Swal.fire({
+              icon: "error",
+              title: "You Cant Add Before You Sign In!...",
+              html: `<a class=" text-primary-500 font-semibold text-[24px] capitalize tracking-[8px]" href="/login">login</a>`,
+            })
+          } } >
             Add To Cart
           </Button>
 
@@ -42,14 +50,20 @@ const ProductCard = ({ img, id, title, newPrice, oldPrice, type, colors }) => {
         <FaEye className='cursor-pointer'/>
         </Link>
     </div>
-    <FaRegHeart className='absolute top-5 right-5 cursor-pointer text-red-500  text-3xl ' onClick={() => dispatch(addToWish({
-            id:  id ,
-            name: title ,
-            img:  img  ,
-            newPrice: +newPrice ,
-            colors: colors,
-            amount: 1,
-    }))} />
+        <FaRegHeart className='absolute top-5 right-5 cursor-pointer text-red-500  text-3xl ' onClick={authUser ? () => dispatch(addToWish({
+          id: id,
+          name: title,
+          img: img,
+          newPrice: +newPrice,
+          colors: colors
+        })) :
+          () => {
+            Swal.fire({
+              icon: "error",
+              title: "You Cant Add Before You Sign In!...",
+              html: `<a class=" text-primary-500 font-semibold text-[24px] capitalize tracking-[8px]" href="/login">login</a>`,
+            })
+          } } />
   </CardBody>
 </Card>
   )

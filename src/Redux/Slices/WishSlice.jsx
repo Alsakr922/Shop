@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import Swal from "sweetalert2";
 
 export const WishSlice = createSlice({
   name: "wish",
@@ -26,6 +27,11 @@ export const WishSlice = createSlice({
           })
           state.totalAmount++;
         }
+                    Swal.fire({
+      title: "Added!",
+      text: "Your Product has been Added.",
+      icon: "success"
+    });
         const wishJson = JSON.stringify(state.wish)
         sessionStorage.setItem('wish', wishJson)
       }
@@ -44,6 +50,11 @@ export const WishSlice = createSlice({
               product.id !== productId.id 
             
           );
+      Swal.fire({
+      title: "Deleted!",
+      text: "Your Product has been Deleted.",
+      icon: "error"
+    });
           state.totalAmount--;
           const wishJson = JSON.stringify(state.wish)
           sessionStorage.setItem('wish', wishJson)
