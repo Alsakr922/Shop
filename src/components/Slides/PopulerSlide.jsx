@@ -9,7 +9,7 @@ export default function PopulerSlide() {
     title: 'Apple Watch Ultra 2',
     type: "Watches",
     id: "6",
-    img: "/src/assets/products/w (1).webp",
+    img: "/src/assets/products/w(1).webp",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['gray','blue','white','green',]
@@ -18,7 +18,7 @@ export default function PopulerSlide() {
     title: 'Apple Watch Ultra 2',
     type: "Watches",
     id: "7",
-    img: "/src/assets/products/w (2).webp",
+    img: "/src/assets/products/w(2).webp",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['gray','blue','white','green',]
@@ -27,20 +27,42 @@ export default function PopulerSlide() {
     title: 'Apple Watch Ultra 2',
     type: "Watches",
     id: "8",
-    img: "/src/assets/products/w (3).webp",
+    img: "/src/assets/products/w(3).webp",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['gray','blue','white','green',]
   },]
   const settings = {
     dots: true,
-    infinite: true,
     autoplay: true,
-    arrows: true,
-    speed: 300,
+    autoplaySpeed:2000,
+    infinite: true,
+    speed: 1000,
     slidesToShow: 3,
     slidesToScroll: 1,
-    
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
   <div className='pb-[100px] bg-gray-100' id='products'>

@@ -9,7 +9,7 @@ const SellerSlide = () => {
     title: 'Gaming HeadPhones',
     type: "Accessories",
     id: "15",
-    img: "/src/assets/products/h (2).webp",
+    img: "/src/assets/products/h(2).webp",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','purple',]
@@ -18,7 +18,7 @@ const SellerSlide = () => {
     title: 'Gaming HeadPhones',
     type: "Accessories",
     id: "16",
-    img: "/src/assets/products/h (3).webp",
+    img: "/src/assets/products/h(3).webp",
     oldPrice: 3200,
     newPrice: 2805,
     colors:['yellow','black','purple',]
@@ -27,7 +27,7 @@ const SellerSlide = () => {
     title: 'Apple Penscil',
     type: "Accessories",
     id: "17",
-    img: "/src/assets/products/a (1).webp",
+    img: "/src/assets/products/a(1).webp",
     oldPrice: 3200,
     newPrice: 2800,
     colors:['yellow','black','purple',]
@@ -36,7 +36,7 @@ const SellerSlide = () => {
     title: 'HeadPhones',
     type: "Accessories",
     id: "18",
-    img: "/src/assets/products/a (2).webp",
+    img: "/src/assets/products/a(2).webp",
     oldPrice: 3200,
     newPrice: 2834,
     colors:['yellow','black','purple',]
@@ -45,7 +45,7 @@ const SellerSlide = () => {
     title: 'HeadPhones',
     type: "Accessories",
     id: "19",
-    img: "/src/assets/products/a (3).webp",
+    img: "/src/assets/products/a(3).webp",
     oldPrice: 3200,
     newPrice: 2500,
     colors:['yellow','black','purple',]
@@ -54,19 +54,42 @@ const SellerSlide = () => {
     title: 'HeadPhones',
     type: "Accessories",
     id: "20",
-    img: "/src/assets/products/a (4).webp",
+    img: "/src/assets/products/a(4).webp",
     oldPrice: 3200,
     newPrice: 2222,
     colors:['yellow','black','purple',]
   },]
-  var settings = {
+  const settings = {
     dots: true,
-    infinite: true,
     autoplay: true,
-    arrows: true,
-    speed: 300,
+    autoplaySpeed:2000,
+    infinite: true,
+    speed: 1000,
     slidesToShow: 3,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
   <div className='pb-[100px] bg-gray-100' id='products'>
