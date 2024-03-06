@@ -17,7 +17,6 @@ function App() {
 
     const user = useSelector((state) => state.user.user)
   // console.log("user", user);
-  const { authUser } = user;
   return (
     <Router>
       <Navbar />
@@ -28,8 +27,8 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/filtered/:type' element={<FilteredProducts />} />
         <Route path='/filtered/:type/:id' element={<SingleProduct />} />
-        <Route path='/cart' element={authUser ? <Cart /> :<Login /> } />
-        <Route path='/wish' element={authUser ? <Wish /> : <Login />} />
+        <Route path='/cart' element={ <Cart />  } />
+        <Route path='/wish' element={ <Wish /> } />
       </Routes> 
       <Footer />
     </Router> 
