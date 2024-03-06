@@ -4,7 +4,7 @@ import Swal from "sweetalert2";
 export const WishSlice = createSlice({
   name: "wish",
   initialState: {
-    wish: JSON.parse(sessionStorage.getItem('wish')) || [],
+    wish: JSON.parse(localStorage.getItem('wish')) || [],
     totalAmount: 0,
   },
   reducers: {
@@ -24,6 +24,8 @@ export const WishSlice = createSlice({
             name: productId.name,
             colors: productId.colors,
             type: productId.type,
+            newPrice: productId.newPrice,
+            oldPrice: productId.oldPrice
           })
           state.totalAmount++;
         }
@@ -33,7 +35,7 @@ export const WishSlice = createSlice({
       icon: "success"
     });
         const wishJson = JSON.stringify(state.wish)
-        sessionStorage.setItem('wish', wishJson)
+        localStorage.setItem('wish', wishJson)
       }
       catch (err) { return err }
     },
@@ -57,7 +59,7 @@ export const WishSlice = createSlice({
     });
           state.totalAmount--;
           const wishJson = JSON.stringify(state.wish)
-          sessionStorage.setItem('wish', wishJson)
+          localStorage.setItem('wish', wishJson)
       }
         else {
           console.log('Dont save wish ');

@@ -1,4 +1,4 @@
-import { Button } from "@material-tailwind/react"
+import { Button, Menu, MenuHandler, MenuItem, MenuList } from "@material-tailwind/react"
 import { FaCartPlus, FaHeart, FaStar, FaStarHalf } from "react-icons/fa"
 import { useDispatch, useSelector } from "react-redux"
 import { useParams } from "react-router-dom"
@@ -49,14 +49,25 @@ const SingleProduct = () => {
                   <p>Processor: <span className="text-gray-700">11 Generation Intel® Core™ i3-1115G4 (up to 4.1 GHz with Intel® Turbo Boost Technology, 6 MB L3 cache, 2 cores, 4 threads)</span></p>
                   <p>Ram: <span className="text-gray-700">4GB</span></p>
                   <p>Hard Disk: <span className="text-gray-700">1TB</span></p>
-                  <p>Graphics Card: <span className="text-gray-700">Intel UHD Graphics</span></p>
-                      <select value={color} onChange={(e) => setcolor(e.target.value)} className={`flexCenter w-full border-primary-300 border p-1 my-2 cursor-pointer`}> Colors:
-                        {product.colors.map((c) => {
-                      return (
-                          <option name=" color" key={Math.random} value={c} style={{ color : c }} >{c}</option>
-                      )
-                    })}
-                        </select>
+                    <p>Graphics Card: <span className="text-gray-700">Intel UHD Graphics</span></p>
+                    <Menu className="my-5" color='gray'>
+                      <MenuHandler>
+                        <Button
+                          className="btnOutline my-5"
+                          size="lg"
+
+                        >
+                          Select Color
+                      </Button>
+                      </MenuHandler>
+                      <MenuList value={color} onChange={(e) => setcolor(e.target.value)}> Colors:
+                        {product.colors.map((c,index) => {
+                          return (
+                            <MenuItem key={index} style={{ color : c }} >{c}</MenuItem>
+                            )
+                          })}
+                        </MenuList>
+                          </Menu>
                   <p className="regular-24 border-y border-solid border-gray-30 py-5 my-5 px-5"><span className='text-red-600 text-[16px] pr-3 line-through'>  {product.oldPrice} $ </span>   {product.newPrice}$</p>
                   <div className="flexBetween px-5">
                   <Button className="flex space-x-3 btnOutline text-[30px] hover:text-green-50 rounded-none " onClick={authUser ? () => dispatch(addToCart({

@@ -34,7 +34,7 @@ const Wish = () => {
   }
 });
   }
-  const wish = JSON.parse(sessionStorage.getItem('wish'));
+  const wish = JSON.parse(localStorage.getItem('wish')) || [];
   console.log('wish',wish);
       const wishesTotalAmount = useSelector((state) => state.wish.totalAmount)
       console.log("wishesTotalAmount", wishesTotalAmount)
@@ -53,13 +53,15 @@ const Wish = () => {
     <Typography className="font-normal text-[28px] text-second-500">
       {product.title}
     </Typography>
-
+    <Typography className='text-[20px]'>
+      <span className='text-red-600 line-through'>{product.oldPrice}$</span> , {product.newPrice}$
+    </Typography>
         <div className='flexBetween pt-5'>
           <Button className="flex space-x-3 btnOutline hover:text-green-50 rounded-none " onClick={authUser ? () => dispatch(addToCart({
             id:  product.id ,
             name: product.title ,
             img:  product.img  ,
-            newPrice: +product.newPrice ,
+            newPrice: product.newPrice ,
             colors: product.colors,
             amount: 1,
           })) : alert() }>

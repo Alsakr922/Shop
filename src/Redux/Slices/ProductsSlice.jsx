@@ -4,8 +4,8 @@ import { PRODUCTS_CARD } from "../../constans";
 export const ProuctsSlice = createSlice({
   name: "Proucts",
   initialState: {
-    filteredProducts: JSON.parse(sessionStorage.getItem("FilteredData")) || PRODUCTS_CARD ,
-    singleProduct: JSON.parse(sessionStorage.getItem("SingleProduct"))  || PRODUCTS_CARD ,
+    filteredProducts: JSON.parse(localStorage.getItem("FilteredData")) || PRODUCTS_CARD ,
+    singleProduct: JSON.parse(localStorage.getItem("SingleProduct"))  || PRODUCTS_CARD ,
   },
   reducers: {
     filterProducts(state, action) {
@@ -14,7 +14,7 @@ export const ProuctsSlice = createSlice({
         state.filteredProducts = filter;
         console.log("filtered", filter);
         const SavedFiltered  = JSON.stringify(filter);
-        sessionStorage.setItem("FilteredData", SavedFiltered);
+        localStorage.setItem("FilteredData", SavedFiltered);
     },
     singleProduct(state, action) {
         const single = PRODUCTS_CARD.filter(
@@ -22,7 +22,7 @@ export const ProuctsSlice = createSlice({
         state.singleProduct = single;
         console.log("Singl", single);
         const SavedSingle  = JSON.stringify(single);
-        sessionStorage.setItem("SingleProduct", SavedSingle);
+        localStorage.setItem("SingleProduct", SavedSingle);
     }
   }
 })

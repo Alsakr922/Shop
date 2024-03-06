@@ -149,12 +149,20 @@ html{
 }
 
 .home {
+      display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        color: black;
   background-image: url("/src/assets/hero/hero-2.png");
   background-position: center;
   background-size: cover !important;
 }
 @media (max-width:991px) {
   .home {
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
     background-position: 72% 34%;
     background-image: url("/src/assets/hero/hero-1.png");
   }

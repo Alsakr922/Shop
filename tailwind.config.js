@@ -14,8 +14,8 @@ export default withMT ({
         Zcool: ["ZCOOL XiaoWei", 'sans-serif'],
       },
       colors: ({ colors }) => ({
-        primary: colors.blue,
-        second: colors.sky,
+        primary: colors.sky,
+        second: colors.cyan,
         green: {
           50: '#30AF5B',
           90: '#292C27',

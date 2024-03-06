@@ -6,7 +6,7 @@ import {  removeFromCart } from '../Redux/Slices/CartSlice';
 const Cart = () => {
     const dispatch = useDispatch()
 
-      const cart = JSON.parse(sessionStorage.getItem('cart'));
+      const cart = JSON.parse(localStorage.getItem('cart'))|| [];
       const cartTotalPrice = useSelector((state) => state.cart.totalPrice)
       console.log("cartTotalPrice", cartTotalPrice)
       const cartTotalAmount = useSelector((state) => state.cart.totalAmount)

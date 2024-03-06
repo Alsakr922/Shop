@@ -25,7 +25,7 @@ function Navbar() {
   const wishesTotalAmount = useSelector((state) => state.wish.totalAmount)
   // console.log("wishesTotalAmount", wishesTotalAmount)
   return (
-    <div className="w-full bg-second-200 text-center">
+    <div className="w-full bg-second-100 text-center">
       <div className="flexBetween container sm:relative md:relative m-auto py-2 px-5">
         <Link to={"/"}>
           <img className="h-[60px]" src={Logo} />
@@ -59,7 +59,7 @@ function Navbar() {
         </ul>} */}
         <ul className="flexBetween mx-auto text-center">
           {NAV_LINKS.map((link) => (
-                <Link to={link.href} key={link.title} className="lg:regular-24 regular-16 py-2 lg:px-5 px-2 text-primary-600 flexCenter cursor-pointer transition-all hover:text-second-900">
+                <Link href={link.href} to={link.href} key={link.title} className="lg:regular-24 regular-16 py-2 lg:px-5 px-2 text-primary-600 flexCenter cursor-pointer transition-all hover:text-second-900">
                   {link.label}
               </Link>
               ))}

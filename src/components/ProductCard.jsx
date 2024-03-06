@@ -54,6 +54,7 @@ const ProductCard = ({ img, id, title, newPrice, oldPrice, type, colors }) => {
           name: title,
           img: img,
           newPrice: +newPrice,
+          oldPrice: oldPrice,
           colors: colors
         })) :
           () => {

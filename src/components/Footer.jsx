@@ -1,13 +1,15 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable react/prop-types */
-import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
+import { FaCopyright, FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
 import Logo from '../logo.png'
 import { Link } from 'react-router-dom'
+import { Alert } from '@material-tailwind/react'
 
 
 
 const Footer = () => {
   return (
+    <>
 <footer className="py-20">
   <div className="grid lg:grid-cols-3 md:grid-cols-1 container m-auto text-gray-700">
     <ul className="contact ">
@@ -39,7 +41,7 @@ const Footer = () => {
         <p className="my-5 font-semibold text-lg">My Account</p>
         <Link to={"/login"}><li>Sign In</li></Link>
         <Link to={"/cart"}><li>View Cart</li></Link>
-        <Link to={"/cart"}><li>My Wishlist</li></Link>
+        <Link to={"/wish"}><li>My Wishlist</li></Link>
         <Link to={"/cart"}><li>Track My Order</li></Link>
         <Link to={"/"}><li>Help</li></Link>
       </ul> 
@@ -54,8 +56,10 @@ const Footer = () => {
       <li>Secured Payment Gateways</li>
       <img src="/src/assets/pay/pay.png" className="ml-5 mt-3" alt="" />
     </ul> 
-  </div> 
+      </div> 
 </footer>
+      <Alert className='flexCenter bg-primary-900 tracking-[2px] mt-2 m-0'> 2024 | Alsakr <FaCopyright className='inline' /> Copy Right</Alert>
+    </>
   )
 }
 

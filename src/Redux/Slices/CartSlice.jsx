@@ -4,7 +4,7 @@ import Swal from "sweetalert2";
 export const CartSlice = createSlice({
   name: "cart",
   initialState: {
-    cart: JSON.parse(sessionStorage.getItem('cart')) || [],
+    cart: JSON.parse(localStorage.getItem('cart')) || [],
     amount: 0,
     totalAmount: 0,
     totalPrice: 0,
@@ -41,7 +41,7 @@ export const CartSlice = createSlice({
     });
         state.totalPrice += productId.newPrice
         const cartJson = JSON.stringify(state.cart)
-        sessionStorage.setItem('cart', cartJson)
+        localStorage.setItem('cart', cartJson)
       }
       catch (err) { return err }
     },
@@ -65,7 +65,7 @@ export const CartSlice = createSlice({
       icon: "error"
     });
       const cartJson = JSON.stringify(state.cart)
-      sessionStorage.setItem('cart', cartJson)
+      localStorage.setItem('cart', cartJson)
       }
       else {
       exist.amount--;
@@ -73,7 +73,7 @@ export const CartSlice = createSlice({
       state.totalAmount--;
       state.totalPrice -= productId.newPrice
       const cartJson = JSON.stringify(state.cart)
-      sessionStorage.setItem('cart', cartJson)
+      localStorage.setItem('cart', cartJson)
     }
         
       } catch (err) {
