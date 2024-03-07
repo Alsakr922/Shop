@@ -3,13 +3,20 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ProductCard from "../ProductCard";
+import h2 from '../../assets/products/h(2).webp'
+import h3 from '../../assets/products/h(3).webp'
+import a1 from '../../assets/products/a(1).webp'
+import a2 from '../../assets/products/a(2).webp'
+import a3 from '../../assets/products/a(3).webp'
+import a4 from '../../assets/products/a(4).webp'
 const SellerSlide = () => {
   
-  const items = [{
+  const items = [
+    {
     title: 'Gaming HeadPhones',
     type: "Accessories",
     id: "15",
-    img: "../../assets/products/h(2).webp",
+    img: h2,
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','purple',]
@@ -18,7 +25,7 @@ const SellerSlide = () => {
     title: 'Gaming HeadPhones',
     type: "Accessories",
     id: "16",
-    img: "../../assets/products/h(3).webp",
+    img: h3,
     oldPrice: 3200,
     newPrice: 2805,
     colors:['yellow','black','purple',]
@@ -27,7 +34,7 @@ const SellerSlide = () => {
     title: 'Apple Penscil',
     type: "Accessories",
     id: "17",
-    img: "../../assets/products/a(1).webp",
+    img: a1,
     oldPrice: 3200,
     newPrice: 2800,
     colors:['yellow','black','purple',]
@@ -36,7 +43,7 @@ const SellerSlide = () => {
     title: 'HeadPhones',
     type: "Accessories",
     id: "18",
-    img: "../../assets/products/a(2).webp",
+    img: a2,
     oldPrice: 3200,
     newPrice: 2834,
     colors:['yellow','black','purple',]
@@ -45,7 +52,7 @@ const SellerSlide = () => {
     title: 'HeadPhones',
     type: "Accessories",
     id: "19",
-    img: "../../assets/products/a(3).webp",
+    img: a3,
     oldPrice: 3200,
     newPrice: 2500,
     colors:['yellow','black','purple',]
@@ -54,7 +61,7 @@ const SellerSlide = () => {
     title: 'HeadPhones',
     type: "Accessories",
     id: "20",
-    img: "../../assets/products/a(4).webp",
+    img: a4,
     oldPrice: 3200,
     newPrice: 2222,
     colors:['yellow','black','purple',]

@@ -3,12 +3,17 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ProductCard from "../ProductCard";
+import lab1 from '../../assets/products/lab(1).webp'
+import lab2 from '../../assets/products/lab(2).webp'
+import lab3 from '../../assets/products/lab(3).webp'
+
 const NewSLide = () => {
-  const items = [{
+  const items = [
+    {
     title: 'I Pad Pro 11 Inch',
     type: "Laptops",
     id: "1",
-    img: "../../assets/products/lab(1).png",
+    img: lab1,
     oldPrice: 22000,
     newPrice: 17000,
     colors:['gray','blue','black']
@@ -17,7 +22,7 @@ const NewSLide = () => {
     title: 'I Pad Pro 14 Inch',
     type: "Laptops",
     id: "2",
-    img: "../../assets/products/lab(2).png",
+    img: lab2,
     oldPrice: 26000,
     newPrice: 18000,
     colors:['gray','blue','black']
@@ -26,7 +31,7 @@ const NewSLide = () => {
     title: 'I Pad Pro 16 Inch',
     type: "Laptops",
     id: "3",
-    img: "../../assets/products/lab(3).png",
+    img: lab3,
     oldPrice: 39000,
     newPrice: 30000,
     colors:['gray','blue','black']

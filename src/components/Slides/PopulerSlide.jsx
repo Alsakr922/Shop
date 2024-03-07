@@ -3,13 +3,18 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ProductCard from "../ProductCard";
+import w1 from '../../assets/products/w(1).webp'
+import w2 from '../../assets/products/w(2).webp'
+import w3 from '../../assets/products/w(3).webp'
+
 
 export default function PopulerSlide() {
-    const items =[   {
+  const items = [
+    {
     title: 'Apple Watch Ultra 2',
     type: "Watches",
     id: "6",
-    img: "../../assets/products/w(1).webp",
+    img: w1,
     oldPrice: 3200,
     newPrice: 2000,
     colors:['gray','blue','white','green',]
@@ -18,7 +23,7 @@ export default function PopulerSlide() {
     title: 'Apple Watch Ultra 2',
     type: "Watches",
     id: "7",
-    img: "../../assets/products/w(2).webp",
+    img:w2,
     oldPrice: 3200,
     newPrice: 2000,
     colors:['gray','blue','white','green',]
@@ -27,7 +32,7 @@ export default function PopulerSlide() {
     title: 'Apple Watch Ultra 2',
     type: "Watches",
     id: "8",
-    img: "../../assets/products/w(3).webp",
+    img: w3,
     oldPrice: 3200,
     newPrice: 2000,
     colors:['gray','blue','white','green',]
