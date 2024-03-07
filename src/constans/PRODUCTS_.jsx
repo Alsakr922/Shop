@@ -54,7 +54,7 @@ export const PRODUCTS_CARD = [
     title: 'I Pad Pro 11 Inch',
     type: "Laptops",
     id: "1",
-    img: {lab1},
+    img: lab1,
     oldPrice: 22000,
     newPrice: 17000,
     colors:['gray','blue','black']
@@ -72,7 +72,7 @@ export const PRODUCTS_CARD = [
     title: 'I Pad Pro 16 Inch',
     type: "Laptops",
     id: "3",
-    img: {lab3},
+    img: lab3,
     oldPrice: 39000,
     newPrice: 30000,
     colors:['gray','blue','black']
@@ -81,7 +81,7 @@ export const PRODUCTS_CARD = [
     title: 'Apple Watch 9',
     type: "Watches",
     id: "4",
-    img: {w3},
+    img: w3,
     oldPrice: 3200,
     newPrice: 2000,
     colors:['gray','red','black']
@@ -90,7 +90,7 @@ export const PRODUCTS_CARD = [
     title: 'Apple Watch Ultra 2',
     type: "Watches",
     id: "5",
-    img: {w1},
+    img: w1,
     oldPrice: 3200,
     newPrice: 2000,
     colors:['gray','blue','white','green',]
@@ -99,7 +99,7 @@ export const PRODUCTS_CARD = [
     title: 'Apple Watch Ultra 2',
     type: "Watches",
     id: "6",
-    img: {w2},
+    img: w2,
     oldPrice: 3200,
     newPrice: 2000,
     colors:['gray','blue','white','green',]
@@ -108,7 +108,7 @@ export const PRODUCTS_CARD = [
     title: 'Apple Watch Ultra 2',
     type: "Watches",
     id: "7",
-    img: {w4},
+    img: w4,
     oldPrice: 3200,
     newPrice: 2000,
     colors:['gray','blue','white','green',]
@@ -117,7 +117,7 @@ export const PRODUCTS_CARD = [
     title: 'Apple Watch Ultra 2',
     type: "Watches",
     id: "8",
-    img: {w5},
+    img: w5,
     oldPrice: 3200,
     newPrice: 2000,
     colors:['gray','blue','white','green',]
@@ -126,7 +126,7 @@ export const PRODUCTS_CARD = [
     title: 'Apple Watch Ultra 2',
     type: "Watches",
     id: "9",
-    img: {w6},
+    img: w6,
     oldPrice: 3200,
     newPrice: 2000,
     colors:['gray','blue','white','green',]
@@ -135,7 +135,7 @@ export const PRODUCTS_CARD = [
     title: 'Air Pods Customization Colors',
     type: "Accessories",
     id: "10",
-    img: {wh1},
+    img: wh1,
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','purple',]
@@ -144,7 +144,7 @@ export const PRODUCTS_CARD = [
     title: 'Air Pods Customization Colors',
     type: "Accessories",
     id: "11",
-    img: {wh2},
+    img: wh2,
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','purple',]
@@ -153,7 +153,7 @@ export const PRODUCTS_CARD = [
     title: 'Air Pods Customization Colors',
     type: "Accessories",
     id: "12",
-    img: {wh3},
+    img: wh3,
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','purple',]
@@ -162,7 +162,7 @@ export const PRODUCTS_CARD = [
     title: 'Air Pods Customization Colors',
     type: "Accessories",
     id: "13",
-    img: {wh4},
+    img: wh4,
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','purple',]
@@ -171,7 +171,7 @@ export const PRODUCTS_CARD = [
     title: 'Gaming HeadPhones',
     type: "Accessories",
     id: "14",
-    img: {h1},
+    img: h1,
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','purple',]
@@ -180,7 +180,7 @@ export const PRODUCTS_CARD = [
     title: 'Gaming HeadPhones',
     type: "Accessories",
     id: "15",
-    img: {h2},
+    img: h2,
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','purple',]
@@ -189,7 +189,7 @@ export const PRODUCTS_CARD = [
     title: 'Gaming HeadPhones',
     type: "Accessories",
     id: "16",
-    img: {h3},
+    img: h3,
     oldPrice: 3200,
     newPrice: 2805,
     colors:['yellow','black','purple',]
@@ -198,7 +198,7 @@ export const PRODUCTS_CARD = [
     title: 'Apple Penscil',
     type: "Accessories",
     id: "17",
-    img: {h4},
+    img: h4,
     oldPrice: 3200,
     newPrice: 2800,
     colors:['yellow','black','purple',]
@@ -207,7 +207,7 @@ export const PRODUCTS_CARD = [
     title: 'HeadPhones',
     type: "Accessories",
     id: "18",
-    img: {a1},
+    img: a1,
     oldPrice: 3200,
     newPrice: 2834,
     colors:['yellow','black','purple',]
@@ -216,7 +216,7 @@ export const PRODUCTS_CARD = [
     title: 'HeadPhones',
     type: "Accessories",
     id: "19",
-    img: {a2},
+    img: a2,
     oldPrice: 3200,
     newPrice: 2500,
     colors:['yellow','black','purple',]
@@ -225,7 +225,7 @@ export const PRODUCTS_CARD = [
     title: 'HeadPhones',
     type: "Accessories",
     id: "19",
-    img: {a12},
+    img: a12,
     oldPrice: 3200,
     newPrice: 2500,
     colors:['yellow','black','purple',]
@@ -234,7 +234,7 @@ export const PRODUCTS_CARD = [
     title: 'HeadPhones',
     type: "Accessories",
     id: "19",
-    img: {a13},
+    img: a13,
     oldPrice: 3200,
     newPrice: 2500,
     colors:['yellow','black','purple',]
@@ -243,7 +243,7 @@ export const PRODUCTS_CARD = [
     title: 'HeadPhones',
     type: "Accessories",
     id: "20",
-    img: {a3},
+    img: a3,
     oldPrice: 3200,
     newPrice: 2222,
     colors:['yellow','black','purple',]
@@ -252,7 +252,7 @@ export const PRODUCTS_CARD = [
     title: 'HeadPhones',
     type: "Accessories",
     id: "21",
-    img: {a4},
+    img: a4,
     oldPrice: 3200,
     newPrice: 440,
     colors:['yellow','black','purple',]
@@ -261,7 +261,7 @@ export const PRODUCTS_CARD = [
     title: 'HeadPhones',
     type: "Accessories",
     id: "22",
-    img: {a5},
+    img: a5,
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','purple',]
@@ -270,7 +270,7 @@ export const PRODUCTS_CARD = [
     title: 'HeadPhones',
     type: "Accessories",
     id: "23",
-    img: {a6},
+    img: a6,
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','purple',]
@@ -279,7 +279,7 @@ export const PRODUCTS_CARD = [
     title: 'HeadPhones',
     type: "Accessories",
     id: "24",
-    img: {a7},
+    img: a7,
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','purple',]
@@ -288,7 +288,7 @@ export const PRODUCTS_CARD = [
     title: 'HeadPhones',
     type: "Accessories",
     id: "25",
-    img: {a8},
+    img: a8,
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','purple',]
@@ -297,7 +297,7 @@ export const PRODUCTS_CARD = [
     title: 'HeadPhones',
     type: "Accessories",
     id: "26",
-    img: {a9},
+    img: a9,
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','purple',]
@@ -306,7 +306,7 @@ export const PRODUCTS_CARD = [
     title: 'HeadPhones',
     type: "Accessories",
     id: "27",
-    img: {a10},
+    img: a10,
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','purple',]
@@ -315,7 +315,7 @@ export const PRODUCTS_CARD = [
     title: 'HeadPhones',
     type: "Accessories",
     id: "28",
-    img: {a11},
+    img: a11,
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','purple',]
@@ -324,7 +324,7 @@ export const PRODUCTS_CARD = [
     title: 'Gaming HeadPhones',
     type: "Accessories",
     id: "29",
-    img: {h5},
+    img: h5,
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','purple',]
@@ -333,7 +333,7 @@ export const PRODUCTS_CARD = [
     title: 'Gaming HeadPhones',
     type: "Accessories",
     id: "30",
-    img: {h6},
+    img: h6,
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','purple',]
@@ -342,7 +342,7 @@ export const PRODUCTS_CARD = [
     title: 'Gaming HeadPhones',
     type: "Accessories",
     id: "31",
-    img: {h7},
+    img: h7,
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','purple',]
@@ -351,7 +351,7 @@ export const PRODUCTS_CARD = [
     title: 'Gaming HeadPhones',
     type: "Accessories",
     id: "32",
-    img: {h8},
+    img: h8,
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','purple',]
@@ -360,7 +360,7 @@ export const PRODUCTS_CARD = [
     title: 'Gaming HeadPhones',
     type: "Accessories",
     id: "33",
-    img:{h9},
+    img:h9,
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','purple',]
@@ -369,7 +369,7 @@ export const PRODUCTS_CARD = [
     title: 'Gaming HeadPhones',
     type: "Accessories",
     id: "34",
-    img: {h10},
+    img: h10,
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','purple',]
@@ -378,7 +378,7 @@ export const PRODUCTS_CARD = [
     title: 'Gaming HeadPhones',
     type: "Accessories",
     id: "35",
-    img: {h11},
+    img: h11,
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','white','purple',]
@@ -387,7 +387,7 @@ export const PRODUCTS_CARD = [
     title: 'Gaming HeadPhones',
     type: "Accessories",
     id: "36",
-    img: {h12},
+    img: h12,
     oldPrice: 3200,
     newPrice: 2000,
     colors:['cyan','gray','purple',]
@@ -396,7 +396,7 @@ export const PRODUCTS_CARD = [
     title: 'Gaming HeadPhones',
     type: "Accessories",
     id: "37",
-    img: {h13},
+    img: h13,
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','violet',]
@@ -405,7 +405,7 @@ export const PRODUCTS_CARD = [
     title: 'Gaming HeadPhones',
     type: "Accessories",
     id: "38",
-    img: {h14},
+    img: h14,
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','white','purple',]
@@ -414,7 +414,7 @@ export const PRODUCTS_CARD = [
     title: 'phone ',
     type: "Phones",
     id: "39",
-    img: {phone2},
+    img: phone2,
     oldPrice: 3200,
     newPrice: 2000,
     colors:['gray']
@@ -422,7 +422,7 @@ export const PRODUCTS_CARD = [
     title: 'phone ',
     type: "Phones",
     id: "40",
-    img: {phone1},
+    img: phone1,
     oldPrice: 3200,
     newPrice: 2000,
     colors:['black']
@@ -431,7 +431,7 @@ export const PRODUCTS_CARD = [
     title: 'phone ',
     type: "Phones",
     id: "41",
-    img: {phone3},
+    img: phone3,
     oldPrice: 3200,
     newPrice: 2000,
     colors:['slate','blue','white','green',]
@@ -440,7 +440,7 @@ export const PRODUCTS_CARD = [
     title: 'Apple TV',
     type: "Tv",
     id: "42",
-    img: {tv},
+    img: tv,
     oldPrice: 3200,
     newPrice: 2000,
     colors:['gray','white','black']
@@ -449,7 +449,7 @@ export const PRODUCTS_CARD = [
     title: 'I Pad',
     type: "IPad",
     id: "43",
-    img: {pad1},
+    img: pad1,
     oldPrice: 3200,
     newPrice: 2000,
     colors:['gray','purple','cyan']
@@ -458,7 +458,7 @@ export const PRODUCTS_CARD = [
     title: 'I Pad',
     type: "IPad",
     id: "44",
-    img: {pad2},
+    img: pad2,
     oldPrice: 3200,
     newPrice: 2000,
     colors:['gray','black']
