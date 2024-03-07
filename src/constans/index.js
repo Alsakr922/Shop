@@ -426,6 +426,22 @@ export const PRODUCTS_CARD = [
     colors:['gray','black']
   },
 ]
+
+//COLORS
+export const COLORS = [
+  'gray',
+  'blue',
+  'black',
+  'white',
+  'red',
+  'green',
+  'slate',
+  'orange',
+  'yellow',
+  'rose',
+  'purple',
+  'cyan'
+]
 // CATEGORYS SECTION
 export const CATEGORYS = [
   { title: 'Laptops', icon:'/src/assets/categories/laptops-category.png'},

@@ -44,7 +44,13 @@ const ProductCard = ({ img, id, title, newPrice, oldPrice, type, colors }) => {
           } } >
             Add To Cart
           </Button>
-
+          <div className='flexBetween'>
+            {colors.map((color , index) => {
+              return (
+                <span key={index} className='h-5 w-5 bg-red-800 m-2 border border-gray-90 rounded-full' style={{ background: color }}></span>
+            )
+          })}
+          </div>
         <Link to={`/filtered/${type}/`+ id } className='px-3 py-3 bg-transparent transition-all hover:bg-primary-500 hover:text-white border border-primary-500 rounded-full'>
         <FaEye className='cursor-pointer'/>
         </Link>

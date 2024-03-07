@@ -10,7 +10,7 @@ import { Alert } from '@material-tailwind/react'
 const Footer = () => {
   return (
     <>
-<footer className="py-20">
+<footer className="py-20 p-5">
   <div className="grid lg:grid-cols-3 md:grid-cols-1 container m-auto text-gray-700">
     <ul className="contact ">
       <img src={Logo} className="logo" width={80} alt="" />
@@ -58,7 +58,7 @@ const Footer = () => {
     </ul> 
       </div> 
 </footer>
-      <Alert className='flexCenter bg-primary-900 tracking-[2px] mt-2 m-0'> 2024 | Alsakr <FaCopyright className='inline' /> Copy Right</Alert>
+      <Alert className='flexCenter bg-primary-900 tracking-[2px] mt-2 m-0'> 2024 | Alsakr <FaCopyright className='inline' /> All Rights Reserved</Alert>
     </>
   )
 }

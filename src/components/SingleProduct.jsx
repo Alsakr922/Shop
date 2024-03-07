@@ -8,6 +8,7 @@ import { addToWish } from "../Redux/Slices/WishSlice"
 import Swal from "sweetalert2"
 
 const SingleProduct = () => {
+  const dispatch = useDispatch()
 
   const cart = useSelector((state) => state.cart.cart)
   console.log("cart", cart)
@@ -19,7 +20,6 @@ const SingleProduct = () => {
   const num = [1, 2, 3, 4 ,0 , 1, 2 , 3, 4, 5, 6, 7, 8]
   const num2 = [1, 2, 3, 4, 0, 1, 2, 3, 4, 5]
   const [color , setcolor] = useState("")
-    const dispatch = useDispatch()
 
 
     const products = useSelector((state) => state.Products.singleProduct)
@@ -30,7 +30,7 @@ const SingleProduct = () => {
   // console.log("user", user);
   const { authUser } = user;
   return (
-    <div className="py-[200px]">
+    <div className="py-[200px] p-5">
       <div className="container m-auto bg-slate-100">
           {products.filter((product) => product.id === id).map((product, index) => {
             return (
@@ -60,7 +60,7 @@ const SingleProduct = () => {
                           Select Color
                       </Button>
                       </MenuHandler>
-                      <MenuList value={color} onChange={(e) => setcolor(e.target.value)}> Colors:
+                      <MenuList className="bg-primary-500" value={color} onChange={(e) => setcolor(e.target.value)}> Colors:
                         {product.colors.map((c,index) => {
                           return (
                             <MenuItem key={index} style={{ color : c }} >{c}</MenuItem>
