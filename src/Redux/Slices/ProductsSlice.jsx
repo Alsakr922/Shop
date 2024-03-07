@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { PRODUCTS_CARD } from "../../constans";
+import { PRODUCTS_CARD } from "../../constans/PRODUCTS_";
 
 export const ProuctsSlice = createSlice({
   name: "Proucts",

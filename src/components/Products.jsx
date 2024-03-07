@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-key */
-import { PRODUCTS_CARD } from '../constans/index'
+import { PRODUCTS_CARD } from '../constans/PRODUCTS_.jsx';
 import ProductCard from './ProductCard.jsx';
 const Products = () => {
 

@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import Products from '../Products'
 import Sidebar from './Sidebar';
-import { PRODUCTS_CARD } from '../../constans';
 import ProductCard from '../ProductCard';
+import { PRODUCTS_CARD } from '../../constans/PRODUCTS_';
 
 const ProductsParent = () => {
   const filteredProducts = [];
