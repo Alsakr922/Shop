@@ -3,9 +3,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ProductCard from "../ProductCard";
-import lab1 from '../../assets/products/lab(1).webp'
-import lab2 from '../../assets/products/lab(2).webp'
-import lab3 from '../../assets/products/lab(3).webp'
+import lab1 from '../../assets/products/lab(1).png'
+import lab2 from '../../assets/products/lab(2).png'
+import lab3 from '../../assets/products/lab(3).png'
 
 const NewSLide = () => {
   const items = [
