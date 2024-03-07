@@ -9,7 +9,7 @@ const SellerSlide = () => {
     title: 'Gaming HeadPhones',
     type: "Accessories",
     id: "15",
-    img: "/src/assets/products/h(2).webp",
+    img: "../../assets/products/h(2).webp",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['yellow','black','purple',]
@@ -18,7 +18,7 @@ const SellerSlide = () => {
     title: 'Gaming HeadPhones',
     type: "Accessories",
     id: "16",
-    img: "/src/assets/products/h(3).webp",
+    img: "../../assets/products/h(3).webp",
     oldPrice: 3200,
     newPrice: 2805,
     colors:['yellow','black','purple',]
@@ -27,7 +27,7 @@ const SellerSlide = () => {
     title: 'Apple Penscil',
     type: "Accessories",
     id: "17",
-    img: "/src/assets/products/a(1).webp",
+    img: "../../assets/products/a(1).webp",
     oldPrice: 3200,
     newPrice: 2800,
     colors:['yellow','black','purple',]
@@ -36,7 +36,7 @@ const SellerSlide = () => {
     title: 'HeadPhones',
     type: "Accessories",
     id: "18",
-    img: "/src/assets/products/a(2).webp",
+    img: "../../assets/products/a(2).webp",
     oldPrice: 3200,
     newPrice: 2834,
     colors:['yellow','black','purple',]
@@ -45,7 +45,7 @@ const SellerSlide = () => {
     title: 'HeadPhones',
     type: "Accessories",
     id: "19",
-    img: "/src/assets/products/a(3).webp",
+    img: "../../assets/products/a(3).webp",
     oldPrice: 3200,
     newPrice: 2500,
     colors:['yellow','black','purple',]
@@ -54,7 +54,7 @@ const SellerSlide = () => {
     title: 'HeadPhones',
     type: "Accessories",
     id: "20",
-    img: "/src/assets/products/a(4).webp",
+    img: "../../assets/products/a(4).webp",
     oldPrice: 3200,
     newPrice: 2222,
     colors:['yellow','black','purple',]

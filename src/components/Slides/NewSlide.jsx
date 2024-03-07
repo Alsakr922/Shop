@@ -8,7 +8,7 @@ const NewSLide = () => {
     title: 'I Pad Pro 11 Inch',
     type: "Laptops",
     id: "1",
-    img: "/src/assets/products/lab(1).png",
+    img: "../../assets/products/lab(1).png",
     oldPrice: 22000,
     newPrice: 17000,
     colors:['gray','blue','black']
@@ -17,7 +17,7 @@ const NewSLide = () => {
     title: 'I Pad Pro 14 Inch',
     type: "Laptops",
     id: "2",
-    img: "/src/assets/products/lab(2).png",
+    img: "../../assets/products/lab(2).png",
     oldPrice: 26000,
     newPrice: 18000,
     colors:['gray','blue','black']
@@ -26,7 +26,7 @@ const NewSLide = () => {
     title: 'I Pad Pro 16 Inch',
     type: "Laptops",
     id: "3",
-    img: "/src/assets/products/lab(3).png",
+    img: "../../assets/products/lab(3).png",
     oldPrice: 39000,
     newPrice: 30000,
     colors:['gray','blue','black']

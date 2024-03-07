@@ -9,7 +9,7 @@ export default function PopulerSlide() {
     title: 'Apple Watch Ultra 2',
     type: "Watches",
     id: "6",
-    img: "/src/assets/products/w(1).webp",
+    img: "../../assets/products/w(1).webp",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['gray','blue','white','green',]
@@ -18,7 +18,7 @@ export default function PopulerSlide() {
     title: 'Apple Watch Ultra 2',
     type: "Watches",
     id: "7",
-    img: "/src/assets/products/w(2).webp",
+    img: "../../assets/products/w(2).webp",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['gray','blue','white','green',]
@@ -27,7 +27,7 @@ export default function PopulerSlide() {
     title: 'Apple Watch Ultra 2',
     type: "Watches",
     id: "8",
-    img: "/src/assets/products/w(3).webp",
+    img: "../../assets/products/w(3).webp",
     oldPrice: 3200,
     newPrice: 2000,
     colors:['gray','blue','white','green',]
