@@ -63,7 +63,7 @@ export const PRODUCTS_CARD = [
     title: 'I Pad Pro 14 Inch',
     type: "Laptops",
     id: "2",
-    img: {lab2},
+    img: lab2,
     oldPrice: 26000,
     newPrice: 18000,
     colors:['gray','blue','black']
