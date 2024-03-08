@@ -7,16 +7,19 @@ export const AuthSlice = createSlice({
   initialState: {
       user: JSON.parse(localStorage.getItem('user')) || {
         name: '',
+        password: '',
         email: '',
+        gender:'',
         authUser: false
     },
   },
   reducers: {
     login(state, action) {
       const userId = action.payload;
-      const userValidation = /^[A-Za-zA-a-z]{4,10}$/i.test(userId.name);
+      const userValidation = (userId.name);
+      const passwordValidation =(userId.password)
       state.user = userId;
-      if (!userValidation) {
+      if (!passwordValidation || !userValidation) {
         state.user.authUser = false;
       } else {
         state.user.authUser = true;
@@ -32,7 +35,9 @@ export const AuthSlice = createSlice({
     logout(state) {
       state.user = {
         name: '',
+        password: '',
         email: '',
+        gender:'',
         authUser: false
       };
               Swal.fire({

@@ -30,7 +30,7 @@ html{
     @apply bg-primary-400 text-white border-primary-400
   }
   .btnOutline {
-    @apply py-2 px-4 text-black  rounded-2xl border border-primary-400 transition-all focus:outline-none bg-transparent
+    @apply text-black rounded-2xl border border-primary-400 transition-all focus:outline-none bg-transparent
   }
 
   .btnOutline:hover {
@@ -70,6 +70,9 @@ html{
     @apply text-[64px] font-[400] leading-[120%];
   }
 
+                                                                .regular-50 {
+                                                                  @apply text-[50px] font-[400] leading-[120%];
+                                                                }
   .regular-40 {
     @apply text-[40px] font-[400] leading-[120%];
   }
@@ -177,11 +180,7 @@ html{
   background-size: cover;
   background-position: center;
 }
-.category{
-  background: url("/src/assets/catBack.jpg");
-  background-position: center;
-  background-size: cover;
-}
+
 .Laptops{
   background-image: url("/src/assets/categories/laptops-category.png");
 
@@ -240,4 +239,92 @@ html{
 }
 .section-2{
   background:url("/src/assets/sections/image-2.svg");
+}
+.features .box {
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+  transition: 0.6s;
+}
+
+.features .box:hover {
+  cursor: pointer;
+  box-shadow: 10px 10px 100px rgba(49, 39, 232, 0.1);
+}
+
+.features .box {
+  transition: 0.2s;
+}
+
+.cart-bg {
+  background-image: url("./assets/banner/banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.add {
+  background-image: url("./assets/banner/p2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.articlesOne .box {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+
+.articlesOne .box:first-child {
+  background-image: url("./assets//sections/image-4.svg");
+  background-position: center;
+}
+
+.articlesOne .box:last-child {
+  background-image: url("./assets//sections/image-1.svg");
+}
+
+.articlesOne .box:last-child .btn {
+  border: 1px solid white;
+}
+
+.articlesTwo .box {
+  min-width: 30%;
+  min-height: 30vh;
+  background-size: cover;
+  background-position: 10% 40%;
+}
+
+@media (max-width:768px) {
+  .articlesTwo .box h4 {
+    text-align: center;
+    font-size: 12px;
+    padding: 0;
+  }
+
+  .articlesTwo .box h3 {
+    text-align: center;
+    font-size: 16px;
+    padding: 0;
+  }
+}
+
+.articlesTwo .box:first-child {
+  background-image: url("./assets//sections/image-1.svg");
+}
+
+.articlesTwo .box:nth-child(2) {
+  background-image: url("./assets//sections/image-2.svg");
+}
+
+.articlesTwo .box:last-child {
+  background-image: url("./assets//sections/image-3.svg");
+  background-position: 10% 80%;
+}
+
+.subscripe {
+  background-image: url("./assets/banner/b14.png");
+  background-size: cover;
+  background-position: 20% 30%;
+  background-repeat: no-repeat;
+  background-color: #041e42;
 }
