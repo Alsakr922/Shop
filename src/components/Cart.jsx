@@ -11,7 +11,7 @@ const Cart = () => {
   return (
     
     <section className="container m-auto cart-section">
-      <div className='cart-bg flexCenter my-[50px] py-[100px] font-light text-[200px] leading-[64px] text-white'><>Cart</></div>
+      <div className='cart-bg flexCenter my-[50px] py-[100px] font-light lg:text-[200px] text-[100px]  leading-[64px] text-white'><>Cart</></div>
     <table className="w-full m-auto py-[200px] ">
       <thead className="tablehead p-10 text-primary-500 uppercase lg:text-lg md:text-md sm:text-sm mb-5 "> 
         <td className="lg:p-3 p-[2px] font-semibold">Remove</td>
