@@ -9,10 +9,10 @@ import { Button } from "@material-tailwind/react";
 import { FaHeart, FaShoppingBag } from "react-icons/fa";
 import { useState } from "react";
 function Navbar() {
+ const gender=  JSON.parse(localStorage.getItem("gender"))
   const dispatch = useDispatch()
   const user = useSelector((state) => state.user.user)
   const { authUser } = user;
-  const { gender } = user;
   const [OpenUser, setOpenUser] = useState(false)
   // const [navOpen, setnavOpen] = useState(false)
   const handlerUser = () => setOpenUser(!OpenUser)
@@ -60,7 +60,7 @@ function Navbar() {
               ))}
           {authUser ? 
             <li className="px-5 relative cursor-pointer">
-              <img src={gender === 'male' ? male : female} width={50} onClick={handlerUser} alt="" />
+              <img src={gender == "male" ? male : female} width={50} onClick={handlerUser} alt="" />
         {OpenUser && 
         <ul id="userSign" className="absolute z-50 bg-second-100 top-[62px] right-[-35px] pt-5 px-5 text-black text-[18px] rounded bg-back">
           <li className="py-2 flexCenter gap-x-5 text-gray-500" >Hello:<span className="text-primary-400">{user.name}</span></li>

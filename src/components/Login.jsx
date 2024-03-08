@@ -31,6 +31,7 @@ const Login = () => {
     const { name, value } = e.target;
     setValues({ ...Values, [name]: value });
   }
+  localStorage.setItem("gender" , JSON.stringify(Gender));
   return (
     <div className='container m-auto py-[100px]'>
       <Card className='w-96 m-auto mt-10'>

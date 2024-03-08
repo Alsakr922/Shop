@@ -253,9 +253,16 @@ html{
 .features .box {
   transition: 0.2s;
 }
-
 .cart-bg {
   background-image: url("./assets/banner/banner.png");
+}
+
+.wish-bg {
+  background-image: url("./assets/banner/wish.jpg");
+}
+
+.cart-bg,
+.wish-bg {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

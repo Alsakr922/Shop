@@ -39,7 +39,7 @@ const Wish = () => {
       const wishesTotalAmount = useSelector((state) => state.wish.totalAmount)
   return (
     <div className='py-[200px]'>
-        <p className='lg:regular-64 regular-40 text-center border-b-2 border-b-second-900 py-10 pb-5 mb-10 flexCenter'>Your Wish Items :{wishesTotalAmount}</p>
+      <div className='wish-bg flexCenter my-[50px] py-[100px] font-light text-[150px] leading-[64px] text-white'>Your Wish Items<span>{wishesTotalAmount}</span></div>
       <div className='container m-auto grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5'>
         {wish.map((product , index) => {
           return (
