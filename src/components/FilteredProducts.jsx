@@ -5,9 +5,7 @@ import { useParams } from 'react-router-dom';
 
 const FilteredProducts = () => {
     const products = useSelector((state) => state.Products.filteredProducts)
-    console.log("Filtered Products", products)
     const { type } = useParams()
-    console.log("type", type)
   return (
     <div className='py-[100px]'>
       <div className='container m-auto'>

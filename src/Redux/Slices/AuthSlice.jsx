@@ -7,7 +7,6 @@ export const AuthSlice = createSlice({
   initialState: {
       user: JSON.parse(localStorage.getItem('user')) || {
         name: '',
-        password: '',
         email: '',
         authUser: false
     },
@@ -16,9 +15,8 @@ export const AuthSlice = createSlice({
     login(state, action) {
       const userId = action.payload;
       const userValidation = /^[A-Za-zA-a-z]{4,10}$/i.test(userId.name);
-      const passwordValidation = /^[A-Za-z]{4,10}$/i.test(userId.name)
       state.user = userId;
-      if (!passwordValidation || !userValidation) {
+      if (!userValidation) {
         state.user.authUser = false;
       } else {
         state.user.authUser = true;
@@ -34,7 +32,6 @@ export const AuthSlice = createSlice({
     logout(state) {
       state.user = {
         name: '',
-        password: '',
         email: '',
         authUser: false
       };

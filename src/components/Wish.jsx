@@ -1,18 +1,19 @@
 /* eslint-disable react/jsx-key */
-import { FaEye, FaHeart } from 'react-icons/fa';
+import { FaCheck, FaEye, FaHeart } from 'react-icons/fa';
 import { useDispatch, useSelector } from 'react-redux';
 import { removeFromWish } from '../Redux/Slices/WishSlice';
 import { Button, Card, CardBody, Typography } from '@material-tailwind/react';
 import { Link } from 'react-router-dom';
 import { addToCart } from '../Redux/Slices/CartSlice';
 import Swal from 'sweetalert2';
+import { useState } from 'react';
 
 
 
 const Wish = () => {
-    const dispatch = useDispatch()
-    const user = useSelector((state) => state.user.user)
-  // console.log("user", user);
+  const [Color, setColor] = useState("")  
+  const dispatch = useDispatch()
+  const user = useSelector((state) => state.user.user)
   const { authUser } = user;
   const alert = () => {
     Swal.fire({
@@ -35,11 +36,10 @@ const Wish = () => {
 });
   }
   const wish = JSON.parse(localStorage.getItem('wish')) || [];
-  console.log('wish',wish);
       const wishesTotalAmount = useSelector((state) => state.wish.totalAmount)
-      console.log("wishesTotalAmount", wishesTotalAmount)
   return (
     <div className='py-[200px]'>
+        <p className='lg:regular-64 regular-40 text-center border-b-2 border-b-second-900 py-10 pb-5 mb-10 flexCenter'>Your Wish Items :{wishesTotalAmount}</p>
       <div className='container m-auto grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5'>
         {wish.map((product , index) => {
           return (
@@ -62,12 +62,21 @@ const Wish = () => {
             name: product.title ,
             img:  product.img  ,
             newPrice: product.newPrice ,
-            colors: product.colors,
+            color: Color,
             amount: 1,
           })) : alert() }>
             Add To Cart
           </Button>
-
+                    <div className="flexCenter items-center gap-x-3 mb-2 text-xl font-medium text-gray-900 dark:text-white pt-5">
+                    {product.colors.map((color , index) => {
+                      return (
+                        <label className="h-5 w-5 rounded-full relative cursor-pointer" style={{background:color}}   key={index} >
+                          <input type="radio" value={color} className="absolute top-0 left-0 cursor-pointer -translate-x-0 hidden" onChange={(e) => setColor(e.target.value)} name='color' color={color} />
+                          {Color === color? <FaCheck className="text-[20px] text-primary-900" /> : ''}
+                        </label>
+                        )
+                      })}
+                  </div>
         <Link to={`/filtered/${product.type}/`+ product.id } className='px-3 py-3 bg-transparent transition-all hover:bg-primary-500 hover:text-white border border-primary-500 rounded-full'>
         <FaEye className='cursor-pointer'/>
         </Link>

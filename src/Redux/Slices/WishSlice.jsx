@@ -16,7 +16,11 @@ export const WishSlice = createSlice({
             product.id === productId.id
         )
         if (exist) {
-          console.log("inWish");
+      Swal.fire({
+      title: "No!",
+      text: "Your Product Already Added.",
+      icon: "error"
+    });
         } else {
           state.wish.push({
             id: productId.id,
@@ -28,12 +32,12 @@ export const WishSlice = createSlice({
             oldPrice: productId.oldPrice
           })
           state.totalAmount++;
+          Swal.fire({
+          title: "Added!",
+          text: "Your Product has been Added.",
+          icon: "success"
+        });
         }
-                    Swal.fire({
-      title: "Added!",
-      text: "Your Product has been Added.",
-      icon: "success"
-    });
         const wishJson = JSON.stringify(state.wish)
         localStorage.setItem('wish', wishJson)
       }
@@ -62,8 +66,11 @@ export const WishSlice = createSlice({
           localStorage.setItem('wish', wishJson)
       }
         else {
-          console.log('Dont save wish ');
-            }
+            Swal.fire({
+              icon: "error",
+              title: "Dont Save Wishe Items!...",
+            })
+        }
       } catch (err) {
         return err;
       }

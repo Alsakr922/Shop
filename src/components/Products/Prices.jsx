@@ -1,5 +1,5 @@
 import { Button, Menu, MenuHandler, MenuItem, MenuList } from '@material-tailwind/react'
-import { FaBiking, FaGreaterThan } from 'react-icons/fa'
+import {  FaGreaterThan } from 'react-icons/fa'
 
 const Prices = () => {
   return (

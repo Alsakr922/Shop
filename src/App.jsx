@@ -11,12 +11,9 @@ import Footer from './components/Footer';
 import Wish from './components/Wish';
 import Cart from './components/Cart';
 import Categorys from './components/Categorys';
-import { useSelector } from 'react-redux';
 
 function App() {
 
-    const user = useSelector((state) => state.user.user)
-  // console.log("user", user);
   return (
     <Router>
       <Navbar />

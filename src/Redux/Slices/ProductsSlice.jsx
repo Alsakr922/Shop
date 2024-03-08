@@ -12,7 +12,6 @@ export const ProuctsSlice = createSlice({
         const filter = PRODUCTS_CARD.filter(
           (product) => product.type === action.payload);
         state.filteredProducts = filter;
-        console.log("filtered", filter);
         const SavedFiltered  = JSON.stringify(filter);
         localStorage.setItem("FilteredData", SavedFiltered);
     },
@@ -20,7 +19,6 @@ export const ProuctsSlice = createSlice({
         const single = PRODUCTS_CARD.filter(
           (product) => product.id === action.payload);
         state.singleProduct = single;
-        console.log("Singl", single);
         const SavedSingle  = JSON.stringify(single);
         localStorage.setItem("SingleProduct", SavedSingle);
     }

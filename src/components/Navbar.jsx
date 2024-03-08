@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import { NAV_LINKS } from "../constans/index"
 import Logo from '../logo.png'
-import person from '../assets/people/2.png'
+import male from '../assets/people/2.png'
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../Redux/Slices/AuthSlice";
 import { Button } from "@material-tailwind/react";
@@ -10,20 +10,13 @@ import { useState } from "react";
 function Navbar() {
   const dispatch = useDispatch()
   const user = useSelector((state) => state.user.user)
-  // console.log("user", user);
   const { authUser } = user;
-  // const cart = useSelector((state) => state.cart.cart)
-  // console.log("cart", cart);
-  // const wish = useSelector((state) => state.wish.wish)
-  // console.log("authUser", authUser);
   const [OpenUser, setOpenUser] = useState(false)
   // const [navOpen, setnavOpen] = useState(false)
   const handlerUser = () => setOpenUser(!OpenUser)
   // const handlerNav = () => setnavOpen(!navOpen)
   const cartTotalAmount = useSelector((state) => state.cart.totalAmount)
-  // console.log("cartTotalAmount", cartTotalAmount)
   const wishesTotalAmount = useSelector((state) => state.wish.totalAmount)
-  // console.log("wishesTotalAmount", wishesTotalAmount)
   return (
     <div className="w-full bg-second-100 text-center">
       <div className="flexBetween container sm:relative md:relative m-auto py-2 px-5">
@@ -65,7 +58,7 @@ function Navbar() {
               ))}
           {authUser ? 
             <li className="px-5 relative cursor-pointer">
-              <img src={person} width={50} onClick={handlerUser} alt="" />
+              <img src={male} width={50} onClick={handlerUser} alt="" />
         {OpenUser && 
         <ul id="userSign" className="absolute z-50 bg-second-100 top-[62px] right-[-35px] pt-5 px-5 text-black text-[18px] rounded bg-back">
           <li className="py-2 flexCenter gap-x-5 text-gray-500" >Hello:<span className="text-primary-400">{user.name}</span></li>

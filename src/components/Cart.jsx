@@ -5,12 +5,9 @@ import { FaEraser } from 'react-icons/fa';
 import {  removeFromCart } from '../Redux/Slices/CartSlice';
 const Cart = () => {
     const dispatch = useDispatch()
-
       const cart = JSON.parse(localStorage.getItem('cart'))|| [];
       const cartTotalPrice = useSelector((state) => state.cart.totalPrice)
-      console.log("cartTotalPrice", cartTotalPrice)
       const cartTotalAmount = useSelector((state) => state.cart.totalAmount)
-      console.log("cartTotalAmount", cartTotalAmount)
   return (
     
     <section className="pt-[200px] container m-auto cart-section">
@@ -19,6 +16,7 @@ const Cart = () => {
         <td className="lg:p-3 p-[2px] font-semibold">Remove</td>
         <td className="lg:p-3 p-[2px] font-semibold">Image</td>
         <td className="lg:p-3 p-[2px] font-semibold">Product</td>
+        <td className="lg:p-3 p-[2px] font-semibold">Color</td>
         <td className="lg:p-3 p-[2px] font-semibold">Price</td>
         <td className="lg:p-3 p-[2px] font-semibold">َQuantity</td> 
         <td className="lg:p-3 p-[2px] font-semibold">َTotal</td> 
@@ -29,6 +27,7 @@ const Cart = () => {
             <td className="lg:p-3 p-1 font-semibold cursor-pointer"><FaEraser onClick={() => dispatch(removeFromCart(product))} /></td>
             <td className="lg:p-3 p-[2px] font-semibold"><img src={product.img} width={70} alt="" /></td>
             <td className="lg:p-3 p-[2px] font-semibold">{product.name}</td>
+            <td className="lg:p-3 p-[2px] font-semibold">{product.color}</td>
             <td className="lg:p-3 p-[2px] font-semibold">{product.newPrice}</td>
             <td className="lg:p-3 p-[2px] font-semiold">َ{product.amount}</td> 
             <td className="lg:p-3 p-[2px] font-semibold">َ{+product.newPrice * +product.amount}</td>

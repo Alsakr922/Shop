@@ -15,7 +15,8 @@ export const CartSlice = createSlice({
       try { 
         const exist = state.cart.find(
           (product) =>
-            product.id === productId.id
+            product.id === productId.id &&
+            product.color === productId.color
         )
         if (exist) {
           exist.amount ++;
@@ -27,7 +28,7 @@ export const CartSlice = createSlice({
             id: productId.id,
             img:productId.img,
             name: productId.name,
-            colors: productId.colors,
+            color: productId.color,
             newPrice: +productId.newPrice,
             amount: 1,
             totalPrice: +productId.newPrice

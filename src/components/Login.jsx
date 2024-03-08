@@ -18,7 +18,6 @@ const Login = () => {
   const dispatch = useDispatch()
   const initialState = {
     name: '',
-    password: '',
     email: '',
   };
   const [Values, setValues] = useState(initialState)
@@ -40,7 +39,6 @@ const Login = () => {
         <CardBody className='flex flex-col gap-4 pb-0'>
           <Input icon={<FaUser />} label='User Name' value={Values.name} onChange={onChange} size='lg' type='text' name='name' className=' focus:border-primary-500 ' />
           <Input icon={<FaEnvelope />} label='Email' value={Values.email} onChange={onChange} size='lg' type='email' name='email' className=' focus:border-primary-500 ' />
-          <Input icon={<FaShieldAlt />} label='Password' value={Values.password} onChange={onChange} size='lg' type='password' name='password' className=' focus:border-primary-500 ' />
           <div className="-ml-2.5"></div>
         </CardBody>
         <CardFooter className='pt-0'>
