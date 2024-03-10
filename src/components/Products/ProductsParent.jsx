@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Products from '../Products'
 import Sidebar from './Sidebar';
 import ProductCard from '../ProductCard';
-import { PRODUCTS_CARD } from '../../constans/PRODUCTS_';
+import { PRODUCTS_CARD } from '../../constants/PRODUCTS_';
 
 const ProductsParent = () => {
   const filteredProducts = [];

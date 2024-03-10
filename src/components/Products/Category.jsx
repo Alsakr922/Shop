@@ -1,5 +1,5 @@
 import { Button, Menu, MenuHandler, MenuItem, MenuList } from '@material-tailwind/react'
-import { CATEGORYS } from '../../constans'
+import { CATEGORYS } from '../../constants'
 
 const Category = () => {
   return (

@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap') @tailwind base;
-
+@import url("https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap")
+  @tailwind base;
 
 @tailwind base;
 @tailwind components;
@@ -16,29 +16,28 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 
-
 @layer utilities {
   .btn {
-    @apply py-2 px-8 text-black rounded-2xl border border-primary-400 transition-all focus:outline-none bg-transparent
+    @apply py-2 px-8 text-black rounded-2xl border border-primary-400 transition-all focus:outline-none bg-transparent;
   }
 
   .btn:hover {
-    @apply bg-primary-400 text-white border-primary-400
+    @apply bg-primary-400 text-white border-primary-400;
   }
   .btnOutline {
-    @apply text-black rounded-2xl border border-primary-400 transition-all focus:outline-none bg-transparent
+    @apply text-black rounded-2xl border border-primary-400 transition-all focus:outline-none bg-transparent;
   }
 
   .btnOutline:hover {
-    @apply bg-transparent bg-primary-500 border-transparent text-white
+    @apply bg-transparent bg-primary-500 border-transparent text-white;
   }
 
   .forms {
-    @apply w-full outline-none border-none my-3 py-2 px-6 rounded-3xl text-[20px]
+    @apply w-full outline-none border-none my-3 py-2 px-6 rounded-3xl text-[20px];
   }
 
   .max-container {
@@ -70,9 +69,9 @@ html{
     @apply text-[64px] font-[400] leading-[120%];
   }
 
-                                                                .regular-50 {
-                                                                  @apply text-[50px] font-[400] leading-[120%];
-                                                                }
+  .regular-50 {
+    @apply text-[50px] font-[400] leading-[120%];
+  }
   .regular-40 {
     @apply text-[40px] font-[400] leading-[120%];
   }
@@ -143,7 +142,6 @@ html{
   display: none;
 }
 
-
 /* Hide scrollbar for IE, Edge and Firefox */
 .hide-scrollbar {
   -ms-overflow-style: none;
@@ -153,61 +151,59 @@ html{
 }
 
 .home {
-      display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        color: black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: black;
   background-image: url("/src/assets/hero/hero-2.png");
   background-position: center;
   background-size: cover !important;
 }
-@media (max-width:991px) {
+@media (max-width: 991px) {
   .home {
     display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
+    justify-content: center;
+    align-items: center;
+    color: white;
     background-position: 72% 34%;
     background-image: url("/src/assets/hero/hero-1.png");
   }
+}
 
-                                }
-                
-                                .home .btn {
+.home .btn {
   border: none;
-  background-color: transparent !important;;
+  background-color: transparent !important;
   background: url("/src/assets/button.png");
   background-size: cover;
   background-position: center;
 }
 
-.Laptops{
+.Laptops {
   background-image: url("/src/assets/categories/laptops-category.png");
-
 }
-.IPad{
+.IPad {
   background-image: url("/src/assets/categories/ipads-category.png");
 }
-.Phones{
+.Phones {
   background-image: url("/src/assets/categories/phones-category.png");
 }
-.Tv{
+.Tv {
   background-image: url("/src/assets/categories/tv-home-category.png");
 }
-.Watches{
+.Watches {
   background-image: url("/src/assets/categories/watches-category.png");
 }
-.Accessories{
+.Accessories {
   background-image: url("/src/assets/categories/accessories-category.png");
 }
-.categoryItem{
+.categoryItem {
   background-position: 50% 35%;
   background-size: 248px;
   position: relative;
   transition: 0.3 linear;
   background-color: #ddd;
 }
-.categoryItem::before{
+.categoryItem::before {
   position: absolute;
   content: attr(content);
   text-align: center;
@@ -223,22 +219,23 @@ html{
   transform: scale(1);
   border-radius: 30px;
   padding: 10px;
-  transition:0.3s linear;
+  transition: 0.3s linear;
   opacity: 0;
 }
 .categoryItem:hover::before,
-.categoryItem:hover{
+.categoryItem:hover {
   transform: scale(1.02);
   opacity: 1;
 }
-.sections{
+.sections {
   background-position: 50% 35%;
-    background-size: 248px;}
-.section-1{
-  background:url("/src/assets/sections/image-1.svg");
+  background-size: 248px;
 }
-.section-2{
-  background:url("/src/assets/sections/image-2.svg");
+.section-1 {
+  background: url("/src/assets/sections/image-1.svg");
+}
+.section-2 {
+  background: url("/src/assets/sections/image-2.svg");
 }
 .features .box {
   box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
@@ -301,7 +298,7 @@ html{
   background-position: 10% 40%;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .articlesTwo .box h4 {
     text-align: center;
     font-size: 12px;

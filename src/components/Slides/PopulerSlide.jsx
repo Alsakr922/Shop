@@ -3,44 +3,44 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ProductCard from "../ProductCard";
-import w1 from '../../assets/products/w(1).webp'
-import w2 from '../../assets/products/w(2).webp'
-import w3 from '../../assets/products/w(3).webp'
-
+import w1 from "../../assets/products/w(1).webp";
+import w2 from "../../assets/products/w(2).webp";
+import w3 from "../../assets/products/w(3).webp";
 
 export default function PopulerSlide() {
   const items = [
     {
-    title: 'Apple Watch Ultra 2',
-    type: "Watches",
-    id: "6",
-    img: w1,
-    oldPrice: 3200,
-    newPrice: 2000,
-    colors:['gray','blue','white','green',]
-  },
-  {
-    title: 'Apple Watch Ultra 2',
-    type: "Watches",
-    id: "7",
-    img:w2,
-    oldPrice: 3200,
-    newPrice: 2000,
-    colors:['gray','blue','white','green',]
-  },
-  {
-    title: 'Apple Watch Ultra 2',
-    type: "Watches",
-    id: "8",
-    img: w3,
-    oldPrice: 3200,
-    newPrice: 2000,
-    colors:['gray','blue','white','green',]
-  },]
+      title: "Apple Watch Ultra 2",
+      type: "Watches",
+      id: "6",
+      img: w1,
+      oldPrice: 3200,
+      newPrice: 2000,
+      colors: ["gray", "blue", "white", "green"],
+    },
+    {
+      title: "Apple Watch Ultra 2",
+      type: "Watches",
+      id: "7",
+      img: w2,
+      oldPrice: 3200,
+      newPrice: 2000,
+      colors: ["gray", "blue", "white", "green"],
+    },
+    {
+      title: "Apple Watch Ultra 2",
+      type: "Watches",
+      id: "8",
+      img: w3,
+      oldPrice: 3200,
+      newPrice: 2000,
+      colors: ["gray", "blue", "white", "green"],
+    },
+  ];
   const settings = {
     dots: true,
     autoplay: true,
-    autoplaySpeed:2000,
+    autoplaySpeed: 2000,
     infinite: true,
     speed: 1000,
     slidesToShow: 3,
@@ -70,17 +70,26 @@ export default function PopulerSlide() {
     ],
   };
   return (
-  <div className='pb-[100px] bg-gray-100' id='products'>
-    <div className='New container m-auto'>
-        <p className=' lg:regular-64 regular-40  text-center border-b-2 border-b-second-900 py-10 pb-5 mb-10 '>Populers</p>
-    <Slider   {...settings} >
-            {items.map((item) => {
-        return (
-      <ProductCard title={item.title} img={item.img} oldPrice={item.oldPrice} newPrice={item.newPrice} colors={item.colors} id={item.id} />
-    )
-  })}
-      </Slider>
+    <div className="pb-[100px] bg-gray-100" id="products">
+      <div className="New container m-auto">
+        <p className=" lg:regular-64 regular-40  text-center border-b-2 border-b-second-900 py-10 pb-5 mb-10 ">
+          Populers
+        </p>
+        <Slider {...settings}>
+          {items.map((item) => {
+            return (
+              <ProductCard
+                title={item.title}
+                img={item.img}
+                oldPrice={item.oldPrice}
+                newPrice={item.newPrice}
+                colors={item.colors}
+                id={item.id}
+              />
+            );
+          })}
+        </Slider>
       </div>
-      </div>
+    </div>
   );
 }

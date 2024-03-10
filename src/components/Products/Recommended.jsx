@@ -1,4 +1,4 @@
-import { CATEGORYS } from '../../constans'
+import { CATEGORYS } from '../../constants'
 import { Button } from '@material-tailwind/react'
 import { useDispatch } from 'react-redux'
 import { filterProducts } from '../../Redux/Slices/ProductsSlice'

@@ -1,4 +1,4 @@
-import { COLORS } from '../../constans'
+import { COLORS } from '../../constants'
 import { Button, Menu, MenuHandler, MenuItem, MenuList } from '@material-tailwind/react'
 
 const Colors = () => {
