@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { Button, Card, CardBody, Typography } from "@material-tailwind/react";
 import { FaCheck, FaEye, FaRegHeart } from "react-icons/fa";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 import { addToWish } from "../Redux/Slices/WishSlice";
@@ -19,21 +19,22 @@ const ProductCardFlex = ({
 }) => {
   const [Color, setColor] = useState("");
   const dispatch = useDispatch();
-  const user = useSelector((state) => state.user.user);
-  const { authUser } = user;
+  const authUser = localStorage.getItem("authUser");
   return (
     <Card
       id={id}
-      className={`bg-[#FAFAFA] my-5 p-7 w-full hover:scale-[1.02] grid lg:grid-cols-3 md:grid-col-3 grid-col-1 cursor-pointer transition-all`}>
-      <div className="cols-span-1">
-        <img src={img} alt="logo" className="h-40 mx-auto pb-3" />
-        <div className="flexCenter items-center gap-x-3 mb-2 text-xl font-medium text-gray-900 dark:text-white pt-5">
+      className={`cardFlex  before:bg-second-500 shadow-xl bg-[#FAFAFA] my-5 p-7 w-full hover:scale-[1.02] grid lg:grid-cols-3 md:grid-col-3 grid-col-1 cursor-pointer z-50 transition-all`}
+    >
+      <div className="cols-span-1 ">
+        <img src={img} alt="logo" className="h-40 mx-auto pb-3 z-50" />
+        <div className="flexCenter items-center gap-x-3 mb-2 text-xl font-medium text-gray-900 dark:text-white pt-5 color">
           {colors.map((color, index) => {
             return (
               <label
-                className="h-5 w-5 rounded-full relative cursor-pointer"
+                className="h-5 w-5 rounded-none relative  border-[0.5px] border-primary-900 cursor-pointer"
                 style={{ background: color }}
-                key={index}>
+                key={index}
+              >
                 <input
                   type="radio"
                   value={color}
@@ -52,7 +53,7 @@ const ProductCardFlex = ({
           })}
         </div>
       </div>
-      <CardBody className="cols-span-2">
+      <CardBody className="cols-span-2 ">
         <Typography className="font-normal text-[28px] text-second-500">
           {title}
         </Typography>
@@ -65,9 +66,9 @@ const ProductCardFlex = ({
         </Typography>
         <div className="flexBetween pt-2">
           <Button
-            className="flex btnOutline hover:text-green-50 rounded-none  "
+            className="flex btnOutline hover:text-green-50 rounded-none  addCart"
             onClick={
-              authUser
+              authUser == "true"
                 ? () =>
                     dispatch(
                       addToCart({
@@ -85,17 +86,19 @@ const ProductCardFlex = ({
                       title: "You Cant Add Before You Sign In!...",
                     });
                   }
-            }>
+            }
+          >
             Add To Cart
           </Button>
         </div>
         <Link
           to={`/filtered/${type}/` + id}
-          className="p-3 text-[20px] absolute bottom-2 right-4 cursor-pointer  bg-transparent transition-all hover:bg-primary-500 hover:text-white border border-primary-500 rounded-full">
+          className="p-3 text-[20px] absolute bottom-2 right-4 cursor-pointer  bg-transparent transition-all hover:bg-primary-500 hover:text-white border border-primary-500 rounded-none watch"
+        >
           <FaEye className="cursor-pointer" />
         </Link>
         <FaRegHeart
-          className="absolute top-5 right-7 cursor-pointer text-red-500 text-3xl "
+          className="absolute top-5 right-7 cursor-pointer text-red-500 text-3xl love"
           onClick={
             authUser
               ? () =>

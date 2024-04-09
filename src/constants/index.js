@@ -35,10 +35,8 @@ export const COLORS = [
   "white",
   "red",
   "green",
-  "slate",
   "orange",
   "yellow",
-  "rose",
   "purple",
   "cyan",
 ];

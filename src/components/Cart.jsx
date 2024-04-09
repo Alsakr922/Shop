@@ -52,7 +52,7 @@ const Cart = () => {
           })}
         </tbody>
       </table>
-      <div className="bg-primary-300 rounded-lg ms-auto mt-auto p-5 w-[500px] max-w-[60%] lg:regular-40 regular-30 ">
+      <div className="bg-primary-300 rounded-none ms-auto mt-auto p-5 w-[500px] max-w-[60%] lg:regular-40 regular-30 ">
         <div className="flexBetween text-gray-20">
           Total Items :{" "}
           <span className="text-primary-500 font-semibold">

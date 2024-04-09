@@ -6,6 +6,7 @@ import ProductCard from "../ProductCard";
 import lab1 from "../../assets/products/lab(1).png";
 import lab2 from "../../assets/products/lab(2).png";
 import lab3 from "../../assets/products/lab(3).png";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const NewSLide = () => {
   const items = [
@@ -39,6 +40,16 @@ const NewSLide = () => {
   ];
   const settings = {
     dots: true,
+    nextArrow: (
+      <button className="text-primary-500 text-[30px]">
+        <FaArrowRight className="text-primary-500 text-[30px] absolute top-[-5px] right-[-10px] bg-gray-100" />
+      </button>
+    ),
+    prevArrow: (
+      <button className="text-primary-500 text-[30px]">
+        <FaArrowLeft className="text-primary-500 text-[30px] absolute top-[-5px] left-[-10px] bg-gray-100" />
+      </button>
+    ),
     autoplay: true,
     autoplaySpeed: 2000,
     infinite: true,

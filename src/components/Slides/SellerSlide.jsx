@@ -9,6 +9,7 @@ import a1 from "../../assets/products/a(1).webp";
 import a2 from "../../assets/products/a(2).webp";
 import a3 from "../../assets/products/a(3).webp";
 import a4 from "../../assets/products/a(4).webp";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 const SellerSlide = () => {
   const items = [
     {
@@ -68,6 +69,16 @@ const SellerSlide = () => {
   ];
   const settings = {
     dots: true,
+    nextArrow: (
+      <button className="text-primary-500 text-[30px]">
+        <FaArrowRight className="text-primary-500 text-[30px] absolute top-[-5px] right-[-10px] bg-gray-100" />
+      </button>
+    ),
+    prevArrow: (
+      <button className="text-primary-500 text-[30px]">
+        <FaArrowLeft className="text-primary-500 text-[30px] absolute top-[-5px] left-[-10px] bg-gray-100" />
+      </button>
+    ),
     autoplay: true,
     autoplaySpeed: 2000,
     infinite: true,

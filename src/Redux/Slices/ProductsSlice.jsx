@@ -1,5 +1,6 @@
+/* eslint-disable no-unused-vars */
 import { createSlice } from "@reduxjs/toolkit";
-import { PRODUCTS_CARD } from "../../constants/PRODUCTS_";
+import { PRODUCTS_CARD } from "../../constants/__PRODUCTS";
 
 export const ProuctsSlice = createSlice({
   name: "Proucts",
@@ -9,6 +10,7 @@ export const ProuctsSlice = createSlice({
     singleProduct:
       JSON.parse(localStorage.getItem("SingleProduct")) || PRODUCTS_CARD,
   },
+  error: false,
   reducers: {
     filterProducts(state, action) {
       const filter = PRODUCTS_CARD.filter(
@@ -17,6 +19,7 @@ export const ProuctsSlice = createSlice({
       state.filteredProducts = filter;
       const SavedFiltered = JSON.stringify(filter);
       localStorage.setItem("FilteredData", SavedFiltered);
+      console.log(state.filteredProducts);
     },
     singleProduct(state, action) {
       const single = PRODUCTS_CARD.filter(
@@ -30,5 +33,6 @@ export const ProuctsSlice = createSlice({
 });
 
 // eslint-disable-next-line react-refresh/only-export-components
-export const { filterProducts, singleProduct } = ProuctsSlice.actions;
+export const { filterProducts, singleProduct } =
+  ProuctsSlice.actions;
 export default ProuctsSlice.reducer;

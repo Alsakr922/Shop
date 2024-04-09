@@ -6,6 +6,7 @@ import ProductCard from "../ProductCard";
 import w1 from "../../assets/products/w(1).webp";
 import w2 from "../../assets/products/w(2).webp";
 import w3 from "../../assets/products/w(3).webp";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 export default function PopulerSlide() {
   const items = [
@@ -39,6 +40,16 @@ export default function PopulerSlide() {
   ];
   const settings = {
     dots: true,
+    nextArrow: (
+      <button className="text-primary-500 text-[30px]">
+        <FaArrowRight className="text-primary-500 text-[30px] absolute top-[-5px] right-[-10px] bg-gray-100" />
+      </button>
+    ),
+    prevArrow: (
+      <button className="text-primary-500 text-[30px]">
+        <FaArrowLeft className="text-primary-500 text-[30px] absolute top-[-5px] left-[-10px] bg-gray-100" />
+      </button>
+    ),
     autoplay: true,
     autoplaySpeed: 2000,
     infinite: true,

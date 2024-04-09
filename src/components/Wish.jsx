@@ -11,8 +11,7 @@ import { useState } from "react";
 const Wish = () => {
   const [Color, setColor] = useState("");
   const dispatch = useDispatch();
-  const user = useSelector((state) => state.user.user);
-  const { authUser } = user;
+  const authUser = localStorage.getItem("authUser");
   const alert = () => {
     Swal.fire({
       title: "You Cant?",
@@ -23,7 +22,8 @@ const Wish = () => {
       cancelButtonColor: "#d33",
       cancelButtonText: "No, I dont",
       confirmButtonText: "Yes, I need!",
-    }).then((result) => {
+    })
+      .then((result) => {
       if (result.isConfirmed) {
         Swal.fire({
           title: "Deleted!",
@@ -86,7 +86,7 @@ const Wish = () => {
                     {product.colors.map((color, index) => {
                       return (
                         <label
-                          className="h-5 w-5 rounded-full relative cursor-pointer"
+                          className="h-5 w-5 rounded-none relative cursor-pointer"
                           style={{ background: color }}
                           key={index}>
                           <input
@@ -108,7 +108,7 @@ const Wish = () => {
                   </div>
                   <Link
                     to={`/filtered/${product.type}/` + product.id}
-                    className="px-3 py-3 bg-transparent transition-all hover:bg-primary-500 hover:text-white border border-primary-500 rounded-full">
+                    className="px-3 py-3 bg-transparent transition-all hover:bg-primary-500 hover:text-white border border-primary-500 rounded-none">
                     <FaEye className="cursor-pointer" />
                   </Link>
                 </div>

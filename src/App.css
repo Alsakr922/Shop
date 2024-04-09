@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap")
-  @tailwind base;
+@import url("https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -19,17 +18,19 @@ body {
 html {
   scroll-behavior: smooth;
 }
-
+.cubic {
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
 @layer utilities {
   .btn {
-    @apply py-2 px-8 text-black rounded-2xl border border-primary-400 transition-all focus:outline-none bg-transparent;
+    @apply py-2 px-8 text-black rounded-none border border-primary-400 transition-all focus:outline-none bg-transparent;
   }
 
   .btn:hover {
     @apply bg-primary-400 text-white border-primary-400;
   }
   .btnOutline {
-    @apply text-black rounded-2xl border border-primary-400 transition-all focus:outline-none bg-transparent;
+    @apply text-black border border-primary-400 transition-all focus:outline-none bg-transparent rounded-none;
   }
 
   .btnOutline:hover {
@@ -37,7 +38,7 @@ html {
   }
 
   .forms {
-    @apply w-full outline-none border-none my-3 py-2 px-6 rounded-3xl text-[20px];
+    @apply w-full outline-none border-none my-3 py-2 px-6 rounded-none text-[20px];
   }
 
   .max-container {
@@ -179,54 +180,42 @@ html {
 }
 
 .Laptops {
+  background-position: 50% 35%;
+  background-size: 248px;
+  margin: auto;
   background-image: url("/src/assets/categories/laptops-category.png");
 }
 .IPad {
+  background-position: 50% 35%;
+  background-size: 248px;
+  margin: auto;
   background-image: url("/src/assets/categories/ipads-category.png");
 }
 .Phones {
+  background-position: 50% 35%;
+  background-size: 248px;
+  margin: auto;
   background-image: url("/src/assets/categories/phones-category.png");
 }
 .Tv {
+  background-position: 50% 35%;
+  background-size: 248px;
+  margin: auto;
   background-image: url("/src/assets/categories/tv-home-category.png");
 }
 .Watches {
+  background-position: 50% 35%;
+  background-size: 248px;
+  margin: auto;
   background-image: url("/src/assets/categories/watches-category.png");
 }
 .Accessories {
-  background-image: url("/src/assets/categories/accessories-category.png");
-}
-.categoryItem {
   background-position: 50% 35%;
   background-size: 248px;
-  position: relative;
-  transition: 0.3 linear;
-  background-color: #ddd;
+  margin: auto;
+  background-image: url("/src/assets/categories/accessories-category.png");
 }
-.categoryItem::before {
-  position: absolute;
-  content: attr(content);
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  /* background-color:var(--tw-ring-color); */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform: scale(1);
-  border-radius: 30px;
-  padding: 10px;
-  transition: 0.3s linear;
-  opacity: 0;
-}
-.categoryItem:hover::before,
-.categoryItem:hover {
-  transform: scale(1.02);
-  opacity: 1;
-}
+
 .sections {
   background-position: 50% 35%;
   background-size: 248px;
@@ -237,19 +226,18 @@ html {
 .section-2 {
   background: url("/src/assets/sections/image-2.svg");
 }
+.category .box,
 .features .box {
-  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
   transition: 0.6s;
+  box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.05);
 }
 
+.category .box:hover,
 .features .box:hover {
   cursor: pointer;
-  box-shadow: 10px 10px 100px rgba(49, 39, 232, 0.1);
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.1);
 }
 
-.features .box {
-  transition: 0.2s;
-}
 .cart-bg {
   background-image: url("./assets/banner/banner.png");
 }
@@ -324,11 +312,68 @@ html {
   background-image: url("./assets//sections/image-3.svg");
   background-position: 10% 80%;
 }
+.cardFlex {
+  position: relative;
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
 
-.subscripe {
-  background-image: url("./assets/banner/b14.png");
-  background-size: cover;
-  background-position: 20% 30%;
-  background-repeat: no-repeat;
-  background-color: #041e42;
+.cardFlex::before,
+.cardBody::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  clip-path: circle(150px at 80% 20%);
+  transition: all 0.5s ease-in-out;
+}
+.cardFlex::before {
+  clip-path: circle(10px at 50% -50%);
+  z-index: -10;
+}
+.cardFlex:hover::before {
+  clip-path: circle(300px at 10% -20%);
+}
+.cardBody:hover::before {
+  z-index: -10;
+  clip-path: circle(300px at 80% -20%);
+}
+.user {
+  background: hsl(0, 0%, 91%);
+}
+.cardFlex .addCart,
+.cardBody .color {
+  transform: translateY(300%);
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.watch {
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform: translateX(1000%);
+}
+.cardFlex .color,
+.cardBody .addCart {
+  transform: translateX(-1000%);
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.love {
+  transform: scale(0);
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.cardFlex:hover .love,
+.cardBody:hover .love {
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform: scale(1);
+}
+.cardFlex:hover .watch,
+.cardFlex:hover .addCart,
+.cardFlex:hover .color,
+.cardBody:hover .watch,
+.cardBody:hover .addCart,
+.cardBody:hover .color {
+  transform: translateY(0);
+  transform: translateX(0);
 }

@@ -9,7 +9,7 @@ const Adds = () => {
           Up to <span className="font-medium">70% Off</span> — All Electronics &
           Accessories
         </h1>
-        <Button className="px-10 py-4 bg-transparent rounded btnOutline transition-all transition-200">
+        <Button className="px-10 py-4 bg-transparent rounded-none btnOutline transition-all transition-200">
           Explore More
         </Button>
       </section>

@@ -99,7 +99,7 @@ export const PRODUCTS_CARD = [
     img: w2,
     oldPrice: 3200,
     newPrice: 2000,
-    colors: ["gray", "blue", "white", "green"],
+    colors: ["red", "blue", "white", "green"],
   },
   {
     title: "Apple Watch Ultra 2",
@@ -117,7 +117,7 @@ export const PRODUCTS_CARD = [
     img: w5,
     oldPrice: 3200,
     newPrice: 2000,
-    colors: ["gray", "blue", "white", "green"],
+    colors: ["red", "blue", "white", "green"],
   },
   {
     title: "Apple Watch Ultra 2",
@@ -135,7 +135,7 @@ export const PRODUCTS_CARD = [
     img: wh1,
     oldPrice: 3200,
     newPrice: 2000,
-    colors: ["yellow", "black", "purple"],
+    colors: ["yellow", "orange", "purple"],
   },
   {
     title: "Air Pods Customization Colors",
@@ -144,7 +144,7 @@ export const PRODUCTS_CARD = [
     img: wh2,
     oldPrice: 3200,
     newPrice: 2000,
-    colors: ["yellow", "black", "purple"],
+    colors: ["yellow", "orange", "purple"],
   },
   {
     title: "Air Pods Customization Colors",
@@ -153,7 +153,7 @@ export const PRODUCTS_CARD = [
     img: wh3,
     oldPrice: 3200,
     newPrice: 2000,
-    colors: ["yellow", "black", "purple"],
+    colors: ["yellow", "orange", "purple"],
   },
   {
     title: "Air Pods Customization Colors",
@@ -189,7 +189,7 @@ export const PRODUCTS_CARD = [
     img: h2,
     oldPrice: 3200,
     newPrice: 2000,
-    colors: ["yellow", "black", "purple"],
+    colors: ["orange", "black", "purple"],
   },
   {
     title: "Gaming HeadPhones",
@@ -225,7 +225,7 @@ export const PRODUCTS_CARD = [
     img: a2,
     oldPrice: 3200,
     newPrice: 2500,
-    colors: ["yellow", "black", "purple"],
+    colors: ["yellow", "black", "orange"],
   },
   {
     title: "HeadPhones",

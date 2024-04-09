@@ -60,7 +60,7 @@ const Footer = () => {
             </ul>
             <ul className="account">
               <p className="my-5 font-semibold text-lg">My Account</p>
-              <Link to={"/login"}>
+              <Link to={"/auth"}>
                 <li>Sign In</li>
               </Link>
               <Link to={"/cart"}>
@@ -83,12 +83,12 @@ const Footer = () => {
             <div className="btns flex flex-row mt-5 gap-5">
               <img
                 src="/src/assets/pay/app.jpg"
-                className="border-main-1 rounded hover:cursor-pointer"
+                className="border-main-1 rounded-none hover:cursor-pointer"
                 alt=""
               />
               <img
                 src="/src/assets/pay/play.jpg"
-                className="border-main-1 rounded hover:cursor-pointer"
+                className="border-main-1 rounded-none hover:cursor-pointer"
                 alt=""
               />
             </div>
